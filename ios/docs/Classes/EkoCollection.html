@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EkoCollection Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/EkoCollection" class="dashAnchor"></a>
+    <a title="EkoCollection Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (83% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        EkoCollection Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/EkoChannel.html">EkoChannel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EkoChannelMembership.html">EkoChannelMembership</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EkoChannelRepository.html">EkoChannelRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EkoChatContext.html">EkoChatContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EkoCollection.html">EkoCollection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EkoCollectionChangeSet.html">EkoCollectionChangeSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EkoMessage.html">EkoMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EkoMessageEditor.html">EkoMessageEditor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EkoMessageRepository.html">EkoMessageRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EkoObject.html">EkoObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EkoUser.html">EkoUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EkoUserRepository.html">EkoUserRepository</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:EkoChannelMembership.h@T@EkoChannelMembershipComplete">EkoChannelMembershipComplete</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:EkoChannel.h@T@EkoChatChannelComplete">EkoChatChannelComplete</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:EkoMessage.h@T@EkoChatMessageComplete">EkoChatMessageComplete</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:EkoChatContext.h@T@EkoChatRequestComplete">EkoChatRequestComplete</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:EkoMessageRepository.h@T@EkoChatSendMessageComplete">EkoChatSendMessageComplete</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:EkoCollection.h@T@EkoCollectionComplete">EkoCollectionComplete</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:EkoCollection.h@T@EkoCollectionNotification">EkoCollectionNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:EkoMessageEditor.h@T@EkoMessageEditorComplete">EkoMessageEditorComplete</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@NS_ENUM">NS_ENUM</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>EkoCollection</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoCollection</span> <span class="o">&lt;</span><span class="n">__covariant</span> <span class="n">ObjectType</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>A collection is a container type returned from queries. Clients can request to load more and observe insertions and  changes to the objects in the collection. Initially the count will be zero. Observers will be notified of changes.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoCollection(im)count"></a>
+                    <a name="//apple_ref/objc/Method/-count" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoCollection(im)count">-count</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The number objects</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">count</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">count</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Any</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>NSUInteger</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoCollection(im)objectAtIndex:"></a>
+                    <a name="//apple_ref/objc/Method/-objectAtIndex:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoCollection(im)objectAtIndex:">-objectAtIndex:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an instance at a given index</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">ObjectType</span><span class="p">)</span><span class="nf">objectAtIndex</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">idx</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">object</span><span class="p">(</span><span class="n">atIndex</span> <span class="nv">idx</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">ObjectType</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>idx</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An index in the collection</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>an object</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoCollection(im)loadMore:"></a>
+                    <a name="//apple_ref/objc/Method/-loadMore:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoCollection(im)loadMore:">-loadMore:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Requests more objects to load if any are available</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">loadMore</span><span class="p">:(</span><span class="n">nullable</span> <span class="n"><a href="../Type Definitions.html#/c:EkoCollection.h@T@EkoCollectionComplete">EkoCollectionComplete</a></span><span class="p">)</span><span class="nv">complete</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">loadMore</span><span class="p">(</span><span class="n">_</span> <span class="nv">complete</span><span class="p">:</span> <span class="kt"><a href="../Type Definitions.html#/c:EkoCollection.h@T@EkoCollectionComplete">EkoCollectionComplete</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>complete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A callback provided to once the request has returned. A notification block will be called when the objects are available.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoCollection(im)observeWithBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-observeWithBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoCollection(im)observeWithBlock:">-observeWithBlock:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds a block to observe changes in the collection</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">EkoNotificationToken</span> <span class="o">*</span><span class="p">)</span><span class="nf">observeWithBlock</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Type Definitions.html#/c:EkoCollection.h@T@EkoCollectionNotification">EkoCollectionNotification</a></span><span class="p">)</span><span class="nv">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">observe</span><span class="p">(</span><span class="n">_</span> <span class="nv">block</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type Definitions.html#/c:EkoCollection.h@T@EkoCollectionNotification">EkoCollectionNotification</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EkoNotificationToken</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>called when the collection or any of the underlying objects have changed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>EkoNotificationToken object that should be retained to continue to observe.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-02-24)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
