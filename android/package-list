@@ -1,5 +1,7 @@
 com.ekoapp.ekosdk
 com.ekoapp.ekosdk.adapter
+com.ekoapp.ekosdk.auth
 com.ekoapp.ekosdk.membership
 com.ekoapp.ekosdk.messaging
+com.ekoapp.ekosdk.messaging.data
 com.ekoapp.ekosdk.moderation
