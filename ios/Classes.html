@@ -10,10 +10,11 @@
     
   </head>
   <body>
+    <a name="//apple_ref/objc/Section/Classes" class="dashAnchor"></a>
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (83% documented)</p>
+        <p><a href="index.html"> Docs</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -33,19 +34,22 @@
                 <a href="Classes/EkoChannel.html">EkoChannel</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/EkoChannelMembership.html">EkoChannelMembership</a>
+                <a href="Classes/EkoChannelParticipation.html">EkoChannelParticipation</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/EkoChannelRepository.html">EkoChannelRepository</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/EkoChatContext.html">EkoChatContext</a>
+                <a href="Classes/EkoClient.html">EkoClient</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/EkoCollection.html">EkoCollection</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/EkoCollectionChangeSet.html">EkoCollectionChangeSet</a>
+                <a href="Classes/EkoCollectionChange.html">EkoCollectionChange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EkoMediaRepository.html">EkoMediaRepository</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/EkoMessage.html">EkoMessage</a>
@@ -68,39 +72,19 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Type Definitions.html">Type Definitions</a>
+            <a href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Type Definitions.html#/c:EkoChannelMembership.h@T@EkoChannelMembershipComplete">EkoChannelMembershipComplete</a>
+                <a href="Enums.html#/c:@E@EkoChannelType">EkoChannelType</a>
               </li>
               <li class="nav-group-task">
-                <a href="Type Definitions.html#/c:EkoChannel.h@T@EkoChatChannelComplete">EkoChatChannelComplete</a>
+                <a href="Enums.html#/c:@E@EkoMediaSize">EkoMediaSize</a>
               </li>
               <li class="nav-group-task">
-                <a href="Type Definitions.html#/c:EkoMessage.h@T@EkoChatMessageComplete">EkoChatMessageComplete</a>
+                <a href="Enums.html#/c:@E@EkoMessageType">EkoMessageType</a>
               </li>
               <li class="nav-group-task">
-                <a href="Type Definitions.html#/c:EkoChatContext.h@T@EkoChatRequestComplete">EkoChatRequestComplete</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Type Definitions.html#/c:EkoMessageRepository.h@T@EkoChatSendMessageComplete">EkoChatSendMessageComplete</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Type Definitions.html#/c:EkoCollection.h@T@EkoCollectionComplete">EkoCollectionComplete</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Type Definitions.html#/c:EkoCollection.h@T@EkoCollectionNotification">EkoCollectionNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Type Definitions.html#/c:EkoMessageEditor.h@T@EkoMessageEditorComplete">EkoMessageEditorComplete</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="Functions.html">Functions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Functions.html#/c:@F@NS_ENUM">NS_ENUM</a>
+                <a href="Enums.html#/c:@E@EkoSyncState">EkoSyncState</a>
               </li>
             </ul>
           </li>
@@ -137,12 +121,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoChannel</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">EkoChannel</span></code></pre>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">EkoChannel</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -156,9 +136,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EkoChannelMembership"></a>
-                    <a name="//apple_ref/objc/Class/EkoChannelMembership" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoChannelMembership">EkoChannelMembership</a>
+                    <a name="/c:objc(cs)EkoChannelParticipation"></a>
+                    <a name="//apple_ref/objc/Class/EkoChannelParticipation" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoChannelParticipation">EkoChannelParticipation</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -168,18 +148,13 @@
                       <div class="abstract">
                         <p>A membership encapsulates methods for managing users in a channel</p>
 
-                        <a href="Classes/EkoChannelMembership.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/EkoChannelParticipation.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoChannelMembership</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">EkoChannelMembership</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoChannelParticipation</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -211,12 +186,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoChannelRepository</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">EkoChannelRepository</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoChannelRepository</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -230,9 +200,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EkoChatContext"></a>
-                    <a name="//apple_ref/objc/Class/EkoChatContext" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoChatContext">EkoChatContext</a>
+                    <a name="/c:objc(cs)EkoClient"></a>
+                    <a name="//apple_ref/objc/Class/EkoClient" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoClient">EkoClient</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -240,20 +210,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The Context object serves as an SDK entry point. Should be instatiated with an Application key and be retained by the caller. A valid context instance should be used to create other SDK resources</p>
+                        <p>The Client object serves as an SDK entry point. Should be instatiated with an Application key and be retained by the caller. A valid context instance should be used to create other SDK resources</p>
 
-                        <a href="Classes/EkoChatContext.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/EkoClient.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoChatContext</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">EkoChatContext</span></code></pre>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">EkoClient</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -277,7 +243,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A collection is a container type returned from queries. Clients can request to load more and observe insertions and  changes to the objects in the collection. Initially the count will be zero. Observers will be notified of changes.</p>
+                        <p>A collection is a container type returned from queries. Clients can request to load more and observe insertions and changes to the objects in the collection. Initially the count will be zero. Observers will be notified of changes.</p>
 
                         <a href="Classes/EkoCollection.html" class="slightly-smaller">See more</a>
                       </div>
@@ -285,12 +251,35 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoCollection</span> <span class="o">&lt;</span><span class="n">__covariant</span> <span class="n">ObjectType</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoCollection</span> <span class="o">&lt;</span><span class="n">__covariant</span> <span class="n">ObjectType</span><span class="o">&gt;</span> <span class="o">:</span> <span class="n">NSObject</span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoCollectionChange"></a>
+                    <a name="//apple_ref/objc/Class/EkoCollectionChange" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoCollectionChange">EkoCollectionChange</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents changes in a EkoCollection</p>
+
+                        <a href="Classes/EkoCollectionChange.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
                         <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">EkoCollection</span><span class="o">&lt;</span><span class="kt">ObjectType</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">ObjectType</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoCollectionChange</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -304,9 +293,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EkoCollectionChangeSet"></a>
-                    <a name="//apple_ref/objc/Class/EkoCollectionChangeSet" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoCollectionChangeSet">EkoCollectionChangeSet</a>
+                    <a name="/c:objc(cs)EkoMediaRepository"></a>
+                    <a name="//apple_ref/objc/Class/EkoMediaRepository" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMediaRepository">EkoMediaRepository</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -314,20 +303,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Represents changes in a EkoCollection</p>
+                        <p>Provides access to the media associated with messages</p>
 
-                        <a href="Classes/EkoCollectionChangeSet.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/EkoMediaRepository.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoCollectionChangeSet</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">EkoCollectionChangeSet</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoMediaRepository</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -359,12 +343,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoMessage</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">EkoMessage</span></code></pre>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">EkoMessage</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -396,12 +376,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoMessageEditor</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">EkoMessageEditor</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoMessageEditor</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -433,12 +408,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoMessageRepository</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">EkoMessageRepository</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoMessageRepository</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -470,12 +440,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoObject</span> <span class="o">&lt;</span><span class="n">__covariant</span> <span class="n">ObjectType</span><span class="o">&gt;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">EkoObject</span><span class="o">&lt;</span><span class="kt">ObjectType</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">ObjectType</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">EkoObject</span> <span class="o">&lt;</span><span class="n">__covariant</span> <span class="n">ObjectType</span><span class="o">&gt;</span> <span class="o">:</span> <span class="n">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -507,12 +473,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoUser</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">EkoUser</span></code></pre>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">EkoUser</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -544,12 +506,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoUserRepository</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">EkoUserRepository</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoUserRepository</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -561,8 +518,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-02-24)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-05-23)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

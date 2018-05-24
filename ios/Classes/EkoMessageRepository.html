@@ -14,7 +14,7 @@
     <a title="EkoMessageRepository Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (83% documented)</p>
+        <p><a href="../index.html"> Docs</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -34,19 +34,22 @@
                 <a href="../Classes/EkoChannel.html">EkoChannel</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/EkoChannelMembership.html">EkoChannelMembership</a>
+                <a href="../Classes/EkoChannelParticipation.html">EkoChannelParticipation</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/EkoChannelRepository.html">EkoChannelRepository</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/EkoChatContext.html">EkoChatContext</a>
+                <a href="../Classes/EkoClient.html">EkoClient</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/EkoCollection.html">EkoCollection</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/EkoCollectionChangeSet.html">EkoCollectionChangeSet</a>
+                <a href="../Classes/EkoCollectionChange.html">EkoCollectionChange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EkoMediaRepository.html">EkoMediaRepository</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/EkoMessage.html">EkoMessage</a>
@@ -69,39 +72,19 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Type Definitions.html">Type Definitions</a>
+            <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:EkoChannelMembership.h@T@EkoChannelMembershipComplete">EkoChannelMembershipComplete</a>
+                <a href="../Enums.html#/c:@E@EkoChannelType">EkoChannelType</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:EkoChannel.h@T@EkoChatChannelComplete">EkoChatChannelComplete</a>
+                <a href="../Enums.html#/c:@E@EkoMediaSize">EkoMediaSize</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:EkoMessage.h@T@EkoChatMessageComplete">EkoChatMessageComplete</a>
+                <a href="../Enums.html#/c:@E@EkoMessageType">EkoMessageType</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:EkoChatContext.h@T@EkoChatRequestComplete">EkoChatRequestComplete</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:EkoMessageRepository.h@T@EkoChatSendMessageComplete">EkoChatSendMessageComplete</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:EkoCollection.h@T@EkoCollectionComplete">EkoCollectionComplete</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:EkoCollection.h@T@EkoCollectionNotification">EkoCollectionNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:EkoMessageEditor.h@T@EkoMessageEditorComplete">EkoMessageEditorComplete</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="../Functions.html">Functions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Functions.html#/c:@F@NS_ENUM">NS_ENUM</a>
+                <a href="../Enums.html#/c:@E@EkoSyncState">EkoSyncState</a>
               </li>
             </ul>
           </li>
@@ -113,7 +96,7 @@
             <h1>EkoMessageRepository</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoMessageRepository</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoMessageRepository</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                 </div>
               </div>
@@ -126,9 +109,36 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EkoMessageRepository(im)initWithContext:"></a>
-                    <a name="//apple_ref/objc/Method/-initWithContext:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)initWithContext:">-initWithContext:</a>
+                    <a name="/c:objc(cs)EkoMessageRepository(py)client"></a>
+                    <a name="//apple_ref/objc/Property/client" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(py)client">client</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The context used to create the instance</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nonnull</span><span class="p">)</span> <span class="n"><a href="../Classes/EkoClient.html">EkoClient</a></span> <span class="o">*</span><span class="n">client</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoMessageRepository(im)initWithClient:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithClient:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)initWithClient:">-initWithClient:</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -143,12 +153,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithContext</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoChatContext.html">EkoChatContext</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">context</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">context</span><span class="p">:</span> <span class="kt"><a href="../Classes/EkoChatContext.html">EkoChatContext</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithClient</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoClient.html">EkoClient</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">client</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -159,7 +164,7 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>context</em>
+                                <em>client</em>
                                 </code>
                               </td>
                               <td>
@@ -177,9 +182,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EkoMessageRepository(py)context"></a>
-                    <a name="//apple_ref/objc/Property/context" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(py)context">context</a>
+                    <a name="/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:"></a>
+                    <a name="//apple_ref/objc/Method/-messagesWithChannelId:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:">-messagesWithChannelId:</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -187,19 +192,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The context used to create the instance</p>
+                        <p>Creates a collection of all messages filtered by a channel id</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nonnull</span><span class="p">)</span> <span class="n"><a href="../Classes/EkoChatContext.html">EkoChatContext</a></span> <span class="o">*</span><span class="n">context</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">context</span><span class="p">:</span> <span class="kt"><a href="../Classes/EkoChatContext.html">EkoChatContext</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoCollection.html">EkoCollection</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoMessage.html">EkoMessage</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nf">messagesWithChannelId</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">channelId</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -209,9 +210,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EkoMessageRepository(im)messagesForChannelID:"></a>
-                    <a name="//apple_ref/objc/Method/-messagesForChannelID:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)messagesForChannelID:">-messagesForChannelID:</a>
+                    <a name="/c:objc(cs)EkoMessageRepository(im)createTextMessageWithChannelId:text:"></a>
+                    <a name="//apple_ref/objc/Method/-createTextMessageWithChannelId:text:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createTextMessageWithChannelId:text:">-createTextMessageWithChannelId:text:</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -219,18 +220,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Create a new text message</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoCollection.html">EkoCollection</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoMessage.html">EkoMessage</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nf">messagesForChannelID</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">channelID</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">messages</span><span class="p">(</span><span class="n">forChannelID</span> <span class="nv">channelID</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoCollection.html">EkoCollection</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoMessage.html">EkoMessage</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoMessage.html">EkoMessage</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span>
+<span class="nf">createTextMessageWithChannelId</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">channelId</span>
+                          <span class="nf">text</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">text</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -241,21 +240,29 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>channelID</em>
+                                <em>channelId</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>The unique channel identifier</p>
+                                  <p>A channel Identifier</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>text</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Message text</p>
                                 </div>
                               </td>
                             </tr>
                           </tbody>
                         </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>A collection instance of messages</p>
                       </div>
                     </section>
                   </div>
@@ -263,9 +270,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EkoMessageRepository(im)sendMessageInChannel:withType:data:complete:"></a>
-                    <a name="//apple_ref/objc/Method/-sendMessageInChannel:withType:data:complete:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)sendMessageInChannel:withType:data:complete:">-sendMessageInChannel:withType:data:complete:</a>
+                    <a name="/c:objc(cs)EkoMessageRepository(im)createImageMessageWithChannelId:image:caption:fullImage:"></a>
+                    <a name="//apple_ref/objc/Method/-createImageMessageWithChannelId:image:caption:fullImage:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createImageMessageWithChannelId:image:caption:fullImage:">-createImageMessageWithChannelId:image:caption:fullImage:</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -273,21 +280,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Create a new image message</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">sendMessageInChannel</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">channelID</span>
-                    <span class="nf">withType</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">messageType</span>
-                        <span class="nf">data</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">data</span>
-                    <span class="nf">complete</span><span class="p">:(</span><span class="n"><a href="../Type Definitions.html#/c:EkoMessageRepository.h@T@EkoChatSendMessageComplete">EkoChatSendMessageComplete</a></span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">complete</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sendMessage</span><span class="p">(</span><span class="n">inChannel</span> <span class="nv">channelID</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="n">withType</span> <span class="nv">messageType</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="kt"><a href="../Type Definitions.html#/c:EkoMessageRepository.h@T@EkoChatSendMessageComplete">EkoChatSendMessageComplete</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoMessage.html">EkoMessage</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span>
+<span class="nf">createImageMessageWithChannelId</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">channelId</span>
+                          <span class="nf">image</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="nv">image</span>
+                        <span class="nf">caption</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">caption</span>
+                      <span class="nf">fullImage</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">fullImage</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -298,53 +302,68 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>channelID</em>
+                                <em>channelId</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>The unique channel Identifier</p>
+                                  <p>A channel Identifier</p>
                                 </div>
                               </td>
                             </tr>
                             <tr>
                               <td>
                                 <code>
-                                <em>messageType</em>
+                                <em>image</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>Message Type</p>
+                                  <p>UIImage to be sent (will be sent as JPG)</p>
                                 </div>
                               </td>
                             </tr>
                             <tr>
                               <td>
                                 <code>
-                                <em>data</em>
+                                <em>fullImage</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>Message data</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>complete</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>A block executed when the request has completed</p>
+                                  <p>whether or not the image should be sent at full resolution</p>
                                 </div>
                               </td>
                             </tr>
                           </tbody>
                         </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoMessageRepository(im)init"></a>
+                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)init">-init</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Block call of <code>init</code> and <code>new</code> because this object cannot be created directly</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="n">init</span><span class="p">;</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -354,8 +373,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-02-24)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-05-23)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
