@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>  Reference</title>
+    <title>Type Definitions  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,7 +10,8 @@
     
   </head>
   <body>
-    <a title="  Reference"></a>
+    <a name="//apple_ref/objc/Section/Type Definitions" class="dashAnchor"></a>
+    <a title="Type Definitions  Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="index.html"> Docs</a> (68% documented)</p>
@@ -20,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="index.html"> Reference</a>
         <img id="carat" src="img/carat.png" />
-          Reference
+        Type Definitions  Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -96,62 +97,47 @@
       <article class="main-content">
         <section>
           <section class="section">
-            
-            <h1 id='project-file-notes' class='heading'>Project File Notes</h1>
-<h2 id='concepts' class='heading'>Concepts</h2>
+            <h1>Type Definitions</h1>
+            <p>The following type definitions are available globally.</p>
 
-<p>A good rule of thumb is:</p>
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:EkoClient.h@T@EkoRequestCompletion"></a>
+                    <a name="//apple_ref/objc/Type/EkoRequestCompletion" class="dashAnchor"></a>
+                    <a class="token" href="#/c:EkoClient.h@T@EkoRequestCompletion">EkoRequestCompletion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
 
-<ul>
-<li><code>LiveData</code> classes detemines <em>when</em> to query;</li>
-<li><code>Transaction</code>s determine <em>how</em> to query;</li>
-<li><code>Coordinator</code> makes sure the query goes through to the server properly.</li>
-</ul>
-<h3 id='livedata' class='heading'>LiveData</h3>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span> <span class="n">EkoRequestCompletion</span><span class="p">)(</span><span class="n">BOOL</span> <span class="n">success</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span></code></pre>
 
-<p>Responsible for returning data back to the developer. There are two types of LiveData: object and collection. Object is just a single object, collection is multiple objects. Both LiveData types are just a RLMResult wrapper.</p>
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">EkoRequestCompletion</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Int32</span><span class="p">,</span> <span class="kt">UnsafeMutablePointer</span><span class="o">&lt;</span><span class="kt">Int32</span><span class="o">&gt;</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
-<p>As long as a LiveObject or LiveCollection is in memory, it is assumed that the query is active, and the client should do as much as possible to keep it in sync with the server, including querying for fresh data from the server, if necessary. LiveData should contain a Transaction instance to make queries.</p>
-
-<p>There should be a maximum number of active LiveData objects, to prevent the case of too many network requests caused by active LiveData queries.</p>
-<h3 id='repository' class='heading'>Repository</h3>
-
-<p>Repository should be the place to instantiate a LiveData object with corresponding database query and transaction, and return that LiveData to the user.</p>
-<h3 id='transactions' class='heading'>Transactions</h3>
-
-<p>Responsible for making the server query and managing server responses. It provides a consistent interface for querying for objects and collections to be managed by LiveData classes.</p>
-<h3 id='request' class='heading'>Request</h3>
-
-<p>Requests are responsible for gathering all paramaters from the developer and starting the transations.</p>
-<h3 id='naming-conventions' class='heading'>Naming Conventions</h3>
-
-<ul>
-<li><code>Id</code> and <code>Ids</code> (<strong>not</strong> <code>ID</code> and <code>IDs</code>);</li>
-<li>(for blocks) <code>completion</code> (<strong>not</strong> <code>complete</code>);</li>
-</ul>
-<h2 id='noted-changes-to-the-project-file' class='heading'>Noted changes to the Project file</h2>
-<h3 id='project' class='heading'>Project</h3>
-
-<ul>
-<li>disabled comments warnings in -swift.h generated doc warnings (socket.io)</li>
-</ul>
-<h3 id='framework-target' class='heading'>Framework Target</h3>
-
-<ul>
-<li>link with libz.tbd</li>
-</ul>
-<h3 id='tests-target' class='heading'>Tests Target</h3>
-<h3 id='release-framework' class='heading'>Release framework</h3>
-
-<ul>
-<li>target to build the framework for distribution and usage in projects for development on device and simulator. The output is saved to the desktop.</li>
-</ul>
-<h2 id='notes' class='heading'>Notes</h2>
-
-<ul>
-<li>Assume that EkoObject and EkoCollection are only going to be accessed via a UI thread. This because, since we handle state management of the app, our customers shouldn&rsquo;t need to worry about background processing of object(s). In the future, if multi-threading is required, we can make it so EkoObject only works in the thread that the corresponding repository is created in (since repository manages the stores).</li>
-</ul>
-
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </section>
         </section>
         <section id="footer">
