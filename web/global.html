@@ -1,0 +1,2211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Global - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    <h2><a href="index.html">Home</a></h2><h2><a href="https://docs.ekomedia.technology/web/start" target="_blank" class="menu-item" id="website_link" >Documentation</a></h2><h3>Modules</h3><ul><li><a href="module-eko-sdk.html">eko-sdk</a></li></ul><h3>Classes</h3><ul><li><a href="EkoClient.html">EkoClient</a><ul class='methods'><li data-type='method' style='display: none;'><a href="EkoClient.html#.create">create</a></li><li data-type='method' style='display: none;'><a href="EkoClient.html#registerSession">registerSession</a></li><li data-type='method' style='display: none;'><a href="EkoClient.html#setDisplayName">setDisplayName</a></li><li data-type='method' style='display: none;'><a href="EkoClient.html#setRoles">setRoles</a></li></ul></li><li><a href="ChannelRepository.html">ChannelRepository</a><ul class='methods'><li data-type='method' style='display: none;'><a href="ChannelRepository.html#channelForId">channelForId</a></li><li data-type='method' style='display: none;'><a href="ChannelRepository.html#allChannels">allChannels</a></li><li data-type='method' style='display: none;'><a href="ChannelRepository.html#channelsWithTags">channelsWithTags</a></li><li data-type='method' style='display: none;'><a href="ChannelRepository.html#createChannel">createChannel</a></li><li data-type='method' style='display: none;'><a href="ChannelRepository.html#joinChannel">joinChannel</a></li><li data-type='method' style='display: none;'><a href="ChannelRepository.html#setDisplayName">setDisplayName</a></li><li data-type='method' style='display: none;'><a href="ChannelRepository.html#setMetadata">setMetadata</a></li><li data-type='method' style='display: none;'><a href="ChannelRepository.html#setTags">setTags</a></li></ul></li><li><a href="ChannelModerationRepository.html">ChannelModerationRepository</a><ul class='methods'><li data-type='method' style='display: none;'><a href="ChannelModerationRepository.html#setRateLimit">setRateLimit</a></li><li data-type='method' style='display: none;'><a href="ChannelModerationRepository.html#removeRateLimit">removeRateLimit</a></li><li data-type='method' style='display: none;'><a href="ChannelModerationRepository.html#muteMembers">muteMembers</a></li><li data-type='method' style='display: none;'><a href="ChannelModerationRepository.html#unmuteMembers">unmuteMembers</a></li><li data-type='method' style='display: none;'><a href="ChannelModerationRepository.html#banMembers">banMembers</a></li><li data-type='method' style='display: none;'><a href="ChannelModerationRepository.html#unbanMembers">unbanMembers</a></li><li data-type='method' style='display: none;'><a href="ChannelModerationRepository.html#addRole">addRole</a></li><li data-type='method' style='display: none;'><a href="ChannelModerationRepository.html#removeRole">removeRole</a></li></ul></li><li><a href="ChannelMembershipRepository.html">ChannelMembershipRepository</a><ul class='methods'><li data-type='method' style='display: none;'><a href="ChannelMembershipRepository.html#members">members</a></li><li data-type='method' style='display: none;'><a href="ChannelMembershipRepository.html#membersForFilter">membersForFilter</a></li><li data-type='method' style='display: none;'><a href="ChannelMembershipRepository.html#leave">leave</a></li><li data-type='method' style='display: none;'><a href="ChannelMembershipRepository.html#addMembers">addMembers</a></li><li data-type='method' style='display: none;'><a href="ChannelMembershipRepository.html#removeMembers">removeMembers</a></li></ul></li><li><a href="MessageRepository.html">MessageRepository</a><ul class='methods'><li data-type='method' style='display: none;'><a href="MessageRepository.html#messagesForChannel">messagesForChannel</a></li><li data-type='method' style='display: none;'><a href="MessageRepository.html#createTextMessage">createTextMessage</a></li></ul></li><li><a href="UserRepository.html">UserRepository</a><ul class='methods'><li data-type='method' style='display: none;'><a href="UserRepository.html#userForId">userForId</a></li></ul></li></ul><h3>Namespaces</h3><ul><li><a href="ChannelModel.html">ChannelModel</a></li><li><a href="MemberModel.html">MemberModel</a></li><li><a href="MessageModel.html">MessageModel</a></li><li><a href="PrivilegeListModel.html">PrivilegeListModel</a></li><li><a href="UserModel.html">UserModel</a></li></ul><h3>Interfaces</h3><ul><li><a href="LiveCollection.html">LiveCollection</a><ul class='methods'><li data-type='method' style='display: none;'><a href="LiveCollection.html#resetPage">resetPage</a></li><li data-type='method' style='display: none;'><a href="LiveCollection.html#nextPage">nextPage</a></li><li data-type='method' style='display: none;'><a href="LiveCollection.html#dispose">dispose</a></li></ul></li><li><a href="LiveObject.html">LiveObject</a><ul class='methods'><li data-type='method' style='display: none;'><a href="LiveObject.html#dispose">dispose</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#EkoChannelType">EkoChannelType</a></li><li><a href="global.html#EkoChannelMembership">EkoChannelMembership</a></li><li><a href="global.html#EkoMemberFilter">EkoMemberFilter</a></li><li><a href="global.html#EkoMessageType">EkoMessageType</a></li><li><a href="global.html#EkoSyncState">EkoSyncState</a></li><li><a href="global.html#EkoConnectionStatus">EkoConnectionStatus</a></li><li><a href="global.html#EkoLoadingStatus">EkoLoadingStatus</a></li><li><a href="global.html#EkoDataStatus">EkoDataStatus</a></li><li><a href="global.html#EkoMediaSize">EkoMediaSize</a></li><li><a href="global.html#EkoErrorCode">EkoErrorCode</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Global</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        
+        </h2>
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+            
+
+            
+        
+        </div>
+    
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="EkoChannelType"><span class="type-signature">(readonly) </span>EkoChannelType<span class="type-signature"> :string</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>Standard</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Standard channels are optimized for large real-time group chats with thousands of people.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<div class="description">
+    Channel type.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">string</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="EkoChannelMembership"><span class="type-signature">(readonly) </span>EkoChannelMembership<span class="type-signature"> :string</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>None</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Not a member of the channel</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Member</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Member of the channel</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Banned</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Member banned from the channel</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<div class="description">
+    User membership type for the channel.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">string</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="EkoMemberFilter"><span class="type-signature">(readonly) </span>EkoMemberFilter<span class="type-signature"> :string</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>All</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">All members</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Muted</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Only muted members.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Banned</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Only banned members.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<div class="description">
+    Membership filter for member list queries.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">string</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="EkoMessageType"><span class="type-signature">(readonly) </span>EkoMessageType<span class="type-signature"> :string</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>Text</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<div class="description">
+    Message type.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">string</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="EkoSyncState"><span class="type-signature">(readonly) </span>EkoSyncState<span class="type-signature"> :string</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>Default</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Initial message state</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Synced</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Message sent to the server.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Syncing</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Message in progress of sending to the server.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Message can not be send to the server. Please check error.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<div class="description">
+    Message sync state. Specifies if the message has been successfully sent to the server.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">string</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="EkoConnectionStatus"><span class="type-signature">(readonly) </span>EkoConnectionStatus<span class="type-signature"> :string</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>NotConnected</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The client has never been connected.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Disconnected</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The client was once connected, but not anymore.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Connecting</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The client is in the process of connecting.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Connected</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The client is currently connected.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<div class="description">
+    Connection statuses.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">string</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="EkoLoadingStatus"><span class="type-signature">(readonly) </span>EkoLoadingStatus<span class="type-signature"> :string</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>NotLoading</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The data locally is already fresh, no need to load.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Loading</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The client is currently loading this data from the server.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Loaded</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The client has loaded the fresh data from the server and is up to date.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The client has encoutered an error loading the data. Please check if IDs and parameters are correct.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<div class="description">
+    Loading statuses.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">string</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="EkoDataStatus"><span class="type-signature">(readonly) </span>EkoDataStatus<span class="type-signature"> :string</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>NotExist</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The data does not exist locally.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Local</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The data is fetched from the local database.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Fresh</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The data is fresh.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The data is invalid. This is set in conjunction with <a href="global.html#EkoLoadingStatus"><code>EkoLoadingStatus.Error</code></a>.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<div class="description">
+    Data statuses
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">string</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="EkoMediaSize"><span class="type-signature">(readonly) </span>EkoMediaSize<span class="type-signature"> :string</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>Small</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Up to 160 pixels per dimension</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Medium</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Up to 600 pixels per dimension</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Large</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Up to 1500 pixels per dimension</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Full</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Original upload resolution
+(or same as EkoMediaSize.Large if image was not uploaded with fullImage set to <true>)</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<div class="description">
+    Available media sizes.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">string</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="EkoErrorCode"><span class="type-signature">(readonly) </span>EkoErrorCode<span class="type-signature"> :number</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>BusinessError</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>UnauthorizedError</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Server</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ItemNotFound</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Server</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>BadRequestError</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Server</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Conflict</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Server</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ForbiddenError</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Server</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>PermissionDenied</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Server</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>UserIsMuted</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Server</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ChannelIsMuted</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Server</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>UserIsBanned</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Server</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>NumberOfMemberExceed</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Server</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ExemptFromBan</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Server</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>MaxRepetitionExceed</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Server</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>BanWordFound</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Server</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>LinkNotAllowed</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Server</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Unknown</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Client</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>InvalidParameter</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Client</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ErrorQueryInProgress</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Client</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ConnectionError</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Client</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<div class="description">
+    Error codes
+</br>&nbsp;&nbsp;&nbsp;&nbsp; - server error code pattern: 400XXX
+</br>&nbsp;&nbsp;&nbsp;&nbsp; - client error code pattern: 800XXX
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/jquery-3.1.1.min.js"></script>
+
+<script src="scripts/search.js"></script>
+
+
+<script src="scripts/collapse.js"></script>
+
+
+
+</body>
+</html>
