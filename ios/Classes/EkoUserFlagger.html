@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>EkoMediaRepository Class Reference</title>
+    <title>EkoUserFlagger Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/objc/Class/EkoMediaRepository" class="dashAnchor"></a>
-    <a title="EkoMediaRepository Class Reference"></a>
+    <a name="//apple_ref/objc/Class/EkoUserFlagger" class="dashAnchor"></a>
+    <a title="EkoUserFlagger Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">EkoChat Docs</a></p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">EkoChat Reference</a>
         <img id="carat" src="../img/carat.png" />
-        EkoMediaRepository Class Reference
+        EkoUserFlagger Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -102,14 +102,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>EkoMediaRepository</h1>
+            <h1>EkoUserFlagger</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoMediaRepository</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoUserFlagger</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                 </div>
               </div>
-            <p>Provides access to the media associated with messages</p>
+            <p>A editor encapsulates methods for managing messages</p>
 
           </section>
           <section class="section task-group-section">
@@ -118,9 +118,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EkoMediaRepository(py)client"></a>
+                    <a name="/c:objc(cs)EkoUserFlagger(py)client"></a>
                     <a name="//apple_ref/objc/Property/client" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMediaRepository(py)client">client</a>
+                    <a class="token" href="#/c:objc(cs)EkoUserFlagger(py)client">client</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -150,9 +150,41 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EkoMediaRepository(im)initWithClient:"></a>
-                    <a name="//apple_ref/objc/Method/-initWithClient:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMediaRepository(im)initWithClient:">-initWithClient:</a>
+                    <a name="/c:objc(cs)EkoUserFlagger(py)user"></a>
+                    <a name="//apple_ref/objc/Property/user" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoUserFlagger(py)user">user</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The user Id associated with the instance</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nonnull</span><span class="p">)</span> <span class="n"><a href="../Classes/EkoUser.html">EkoUser</a></span> <span class="o">*</span><span class="n">user</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Classes/EkoUser.html">EkoUser</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoUserFlagger(im)initWithClient:user:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithClient:user:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoUserFlagger(im)initWithClient:user:">-initWithClient:user:</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -167,12 +199,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithClient</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoClient.html">EkoClient</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">client</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithClient</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoClient.html">EkoClient</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">client</span>
+                                  <span class="nf">user</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoUser.html">EkoUser</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">user</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Classes/EkoClient.html">EkoClient</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Classes/EkoClient.html">EkoClient</a></span><span class="p">,</span> <span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Classes/EkoUser.html">EkoUser</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -201,9 +234,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EkoMediaRepository(im)getImageForMessageId:size:resultHandler:"></a>
-                    <a name="//apple_ref/objc/Method/-getImageForMessageId:size:resultHandler:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMediaRepository(im)getImageForMessageId:size:resultHandler:">-getImageForMessageId:size:resultHandler:</a>
+                    <a name="/c:objc(cs)EkoUserFlagger(im)flagWithCompletion:"></a>
+                    <a name="//apple_ref/objc/Method/-flagWithCompletion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoUserFlagger(im)flagWithCompletion:">-flagWithCompletion:</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -211,68 +244,21 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Downloads the image for the given messageId. This method resumes (or starts) the download for the image.</p>
+                        <p>Flags user, this is reported to the admin panel for the moderators to see</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">getImageForMessageId</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">messageId</span>
-                        <span class="nf">size</span><span class="p">:(</span><span class="n"><a href="../Enums.html#/c:@E@EkoMediaSize">EkoMediaSize</a></span><span class="p">)</span><span class="nv">size</span>
-               <span class="nf">resultHandler</span><span class="p">:</span>
-                   <span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nonnull</span><span class="p">)(</span><span class="n">UIImage</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span> <span class="n"><a href="../Enums.html#/c:@E@EkoMediaSize">EkoMediaSize</a></span><span class="p">,</span>
-                                     <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">resultHandler</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">flagWithCompletion</span><span class="p">:(</span><span class="n">EkoRequestCompletion</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getImageForMessageId</span><span class="p">(</span><span class="n">_</span> <span class="nv">messageId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">size</span><span class="p">:</span> <span class="kt"><a href="../Enums.html#/c:@E@EkoMediaSize">EkoMediaSize</a></span><span class="p">,</span> <span class="nv">resultHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">UIImage</span><span class="p">?,</span> <span class="kt"><a href="../Enums.html#/c:@E@EkoMediaSize">EkoMediaSize</a></span><span class="p">,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">flag</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt">EkoRequestCompletion</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>messageId</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>A message Identifier</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>size</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>of the media to donwload (defaults to medium if nil)</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>resultHandler</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>the block to be called with the requested image (or eventual error)</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
                       </div>
                     </section>
                   </div>
@@ -280,9 +266,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EkoMediaRepository(im)cancelGetMediaForMessageId:size:"></a>
-                    <a name="//apple_ref/objc/Method/-cancelGetMediaForMessageId:size:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMediaRepository(im)cancelGetMediaForMessageId:size:">-cancelGetMediaForMessageId:size:</a>
+                    <a name="/c:objc(cs)EkoUserFlagger(im)unflagWithCompletion:"></a>
+                    <a name="//apple_ref/objc/Method/-unflagWithCompletion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoUserFlagger(im)unflagWithCompletion:">-unflagWithCompletion:</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -290,53 +276,21 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Stops (pauses) the media download for the given messageId and EkoMediaSize</p>
+                        <p>Unflags the user</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">cancelGetMediaForMessageId</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">messageId</span>
-                              <span class="nf">size</span><span class="p">:(</span><span class="n"><a href="../Enums.html#/c:@E@EkoMediaSize">EkoMediaSize</a></span><span class="p">)</span><span class="nv">size</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">unflagWithCompletion</span><span class="p">:(</span><span class="n">EkoRequestCompletion</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">cancelGetMedia</span><span class="p">(</span><span class="n">forMessageId</span> <span class="nv">messageId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">size</span><span class="p">:</span> <span class="kt"><a href="../Enums.html#/c:@E@EkoMediaSize">EkoMediaSize</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">unflag</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt">EkoRequestCompletion</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>messageId</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>A message Identifier</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>size</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>A proper EkoMediaSize</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
                       </div>
                     </section>
                   </div>
@@ -344,9 +298,41 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EkoMediaRepository(im)init"></a>
+                    <a name="/c:objc(cs)EkoUserFlagger(im)isFlagByMeWithCompletion:"></a>
+                    <a name="//apple_ref/objc/Method/-isFlagByMeWithCompletion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoUserFlagger(im)isFlagByMeWithCompletion:">-isFlagByMeWithCompletion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The callback returns whether the logged-in user has flagged this user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">isFlagByMeWithCompletion</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nonnull</span><span class="p">)(</span><span class="n">BOOL</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isFlagByMe</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoUserFlagger(im)init"></a>
                     <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
-                    <a class="token discouraged" href="#/c:objc(cs)EkoMediaRepository(im)init">-init</a>
+                    <a class="token discouraged" href="#/c:objc(cs)EkoUserFlagger(im)init">-init</a>
                     </code>
                   </div>
                   <div class="height-container">

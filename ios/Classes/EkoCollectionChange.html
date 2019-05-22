@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>EkoUser Class Reference</title>
+    <title>EkoCollectionChange Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/objc/Class/EkoUser" class="dashAnchor"></a>
-    <a title="EkoUser Class Reference"></a>
+    <a name="//apple_ref/objc/Class/EkoCollectionChange" class="dashAnchor"></a>
+    <a title="EkoCollectionChange Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">EkoChat Docs</a></p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">EkoChat Reference</a>
         <img id="carat" src="../img/carat.png" />
-        EkoUser Class Reference
+        EkoCollectionChange Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -102,15 +102,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>EkoUser</h1>
+            <h1>EkoCollectionChange</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight objective_c"><code>
-<span class="k">@interface</span> <span class="nc">EkoUser</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoCollectionChange</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                 </div>
               </div>
-            <p>User Object</p>
+            <p>Represents changes in a EkoCollection</p>
 
           </section>
           <section class="section task-group-section">
@@ -119,9 +118,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EkoUser(py)userId"></a>
-                    <a name="//apple_ref/objc/Property/userId" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoUser(py)userId">userId</a>
+                    <a name="/c:objc(cs)EkoCollectionChange(py)insertions"></a>
+                    <a name="//apple_ref/objc/Property/insertions" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoCollectionChange(py)insertions">insertions</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -129,18 +128,20 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>The indexes of objects inserted</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nonnull</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">userId</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span>
+    <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSNumber</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">insertions</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">insertions</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -150,9 +151,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EkoUser(py)displayName"></a>
-                    <a name="//apple_ref/objc/Property/displayName" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoUser(py)displayName">displayName</a>
+                    <a name="/c:objc(cs)EkoCollectionChange(py)deletions"></a>
+                    <a name="//apple_ref/objc/Property/deletions" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoCollectionChange(py)deletions">deletions</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -160,18 +161,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>The indexes of objects deleted</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">displayName</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSNumber</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">deletions</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">displayName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">deletions</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -181,9 +183,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EkoUser(py)roles"></a>
-                    <a name="//apple_ref/objc/Property/roles" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoUser(py)roles">roles</a>
+                    <a name="/c:objc(cs)EkoCollectionChange(py)modifications"></a>
+                    <a name="//apple_ref/objc/Property/modifications" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoCollectionChange(py)modifications">modifications</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -191,51 +193,20 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Roles</p>
+                        <p>The indexes of objects modified</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">roles</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span>
+    <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSNumber</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">modifications</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">unowned(unsafe)</span> <span class="k">var</span> <span class="nv">roles</span><span class="p">:</span> <span class="kt">NSArray</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)EkoUser(py)flagCount"></a>
-                    <a name="//apple_ref/objc/Property/flagCount" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoUser(py)flagCount">flagCount</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Number of people that have flagged the user</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSUInteger</span> <span class="n">flagCount</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">flagCount</span><span class="p">:</span> <span class="kt">UInt</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">modifications</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
