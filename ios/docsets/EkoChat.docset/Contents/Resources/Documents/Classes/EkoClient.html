@@ -421,6 +421,171 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)EkoClient(im)registerDeviceForPushNotificationWithDeviceToken:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-registerDeviceForPushNotificationWithDeviceToken:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoClient(im)registerDeviceForPushNotificationWithDeviceToken:completion:">-registerDeviceForPushNotificationWithDeviceToken:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@abstract Register the current device (and the current logged-in user) to receive
+push notifications.
+@discussion You can call this method as many times as you&rsquo;d like: the last call
+will always override any precedent state.
+As long as you call this function with a valid token, and after succesfully
+registering the SDK, you&rsquo;re guaranteed to receive only push notifications related
+to the current logged in user.
+Call <code>unregisterDevicePushNotificationForUserId:completion:</code> to stop receiving
+notifications for this user.
+Succesfully calling this method will override any precedent state: if this device
+was previously registered with a different user, the device will no more get any
+notification related to that user.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Once succesfully registered, this app will continue to receive
+notifications related to this user until the <code>unregisterDeviceForPushWithCompletion:</code>
+or another registration is made.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+    <span class="nf">registerDeviceForPushNotificationWithDeviceToken</span><span class="p">:</span>
+        <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">deviceToken</span>
+                                          <span class="nf">completion</span><span class="p">:</span>
+                                              <span class="p">(</span><span class="n">nullable</span> <span class="n">EkoRequestCompletion</span><span class="p">)</span>
+                                                  <span class="n">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">registerDeviceForPushNotification</span><span class="p">(</span><span class="n">withDeviceToken</span> <span class="nv">deviceToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt">EkoRequestCompletion</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>deviceToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A globally unique token that identifies this device to Apple
+Push Notification service.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block executed when the request has successfully completed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoClient(im)unregisterDevicePushNotificationForUserId:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-unregisterDevicePushNotificationForUserId:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoClient(im)unregisterDevicePushNotificationForUserId:completion:">-unregisterDevicePushNotificationForUserId:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@abstract Unregister the current device to stop receiving any push notifications
+related to the given user userId. If no user is passed, the backend will remove
+any push notification token associated with this device.
+@discussion Call this method when you no longer wish to receive notifications for
+the previously registered user (for example when the user logs out).</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Make sure that the completion block is called with success state, otherwise
+the Eko backend will keep sending push notifications related to the previous user.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">unregisterDevicePushNotificationForUserId</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">userId</span>
+                                       <span class="nf">completion</span><span class="p">:</span>
+                                           <span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span>
+                                               <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span> <span class="n">BOOL</span><span class="p">,</span>
+                                               <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">unregisterDevicePushNotification</span><span class="p">(</span><span class="n">forUserId</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">String</span><span class="p">?,</span> <span class="kt">Bool</span><span class="p">,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The userId of the user of which the SDK should no longer receive
+notifications.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block executed when the request has successfully completed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)EkoClient(im)setDisplayName:completion:"></a>
                     <a name="//apple_ref/objc/Method/-setDisplayName:completion:" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)EkoClient(im)setDisplayName:completion:">-setDisplayName:completion:</a>
@@ -570,7 +735,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-05-22)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-06-04)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

@@ -107,7 +107,7 @@
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoClient.h",
-      "line": 87,
+      "line": 128,
       "symbol": "EkoClient.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
