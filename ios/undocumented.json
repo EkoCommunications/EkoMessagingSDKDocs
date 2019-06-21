@@ -57,6 +57,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelNotificationsManager.h",
+      "line": 48,
+      "symbol": "EkoChannelNotificationsManager.+new",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelParticipation.h",
       "line": 16,
       "symbol": "EkoChannelMembershipFilter",
@@ -79,35 +86,28 @@
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelRepository.h",
-      "line": 22,
+      "line": 23,
       "symbol": "EkoChannelRepository.client",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelRepository.h",
-      "line": 23,
+      "line": 24,
       "symbol": "EkoChannelRepository.totalUnreadCount",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelRepository.h",
-      "line": 148,
+      "line": 154,
       "symbol": "EkoChannelRepository.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoClient.h",
-      "line": 17,
-      "symbol": "EkoRequestCompletion",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoClient.h",
-      "line": 128,
+      "line": 134,
       "symbol": "EkoClient.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
@@ -508,6 +508,13 @@
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoUserFlagger.h",
       "line": 55,
       "symbol": "EkoUserFlagger.+new",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoUserNotificationsManager.h",
+      "line": 50,
+      "symbol": "EkoUserNotificationsManager.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },

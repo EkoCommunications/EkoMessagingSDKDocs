@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>EkoUserRepository Class Reference</title>
+    <title>EkoUserNotificationsManager Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/objc/Class/EkoUserRepository" class="dashAnchor"></a>
-    <a title="EkoUserRepository Class Reference"></a>
+    <a name="//apple_ref/objc/Class/EkoUserNotificationsManager" class="dashAnchor"></a>
+    <a title="EkoUserNotificationsManager Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">EkoChat Docs</a></p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">EkoChat Reference</a>
         <img id="carat" src="../img/carat.png" />
-        EkoUserRepository Class Reference
+        EkoUserNotificationsManager Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -116,14 +116,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>EkoUserRepository</h1>
+            <h1>EkoUserNotificationsManager</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoUserRepository</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoUserNotificationsManager</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                 </div>
               </div>
-            <p>Repository provides access users and collections</p>
+            <p>@abstract Responsible to manage the user level push notification settings.</p>
 
           </section>
           <section class="section task-group-section">
@@ -132,9 +132,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EkoUserRepository(im)initWithClient:"></a>
-                    <a name="//apple_ref/objc/Method/-initWithClient:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoUserRepository(im)initWithClient:">-initWithClient:</a>
+                    <a name="/c:objc(cs)EkoUserNotificationsManager(im)setIsAllowed:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-setIsAllowed:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoUserNotificationsManager(im)setIsAllowed:completion:">-setIsAllowed:completion:</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -142,19 +142,27 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Designated intializer</p>
+                        <p>@abstract Updates the user level push notification setting.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This setting will take effect on every device used by the user.
+If the user wishes to stop receiving notifications only on this device,
+then unregister push notifications with this device instead.</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithClient</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoClient.html">EkoClient</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">client</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setIsAllowed</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">isAllowed</span>
+          <span class="nf">completion</span><span class="p">:(</span><span class="n">nullable</span> <span class="n"><a href="../Type Definitions.html#/c:EkoUserNotificationsManager.h@T@EkoRequestCompletion">EkoRequestCompletion</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Classes/EkoClient.html">EkoClient</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setIsAllowed</span><span class="p">(</span><span class="n">_</span> <span class="nv">isAllowed</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Type Definitions.html#/c:EkoUserNotificationsManager.h@T@EkoRequestCompletion">EkoRequestCompletion</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -165,21 +173,29 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>client</em>
+                                <em>isAllowed</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>A valid context instance</p>
+                                  <p>Whether or not the user would like to receive any push notifications.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block executed when the request has completed.</p>
                                 </div>
                               </td>
                             </tr>
                           </tbody>
                         </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>returns the instance</p>
                       </div>
                     </section>
                   </div>
@@ -187,9 +203,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EkoUserRepository(im)userForId:"></a>
-                    <a name="//apple_ref/objc/Method/-userForId:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoUserRepository(im)userForId:">-userForId:</a>
+                    <a name="/c:objc(cs)EkoUserNotificationsManager(im)isAllowedWithCompletion:"></a>
+                    <a name="//apple_ref/objc/Method/-isAllowedWithCompletion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoUserNotificationsManager(im)isAllowedWithCompletion:">-isAllowedWithCompletion:</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -197,18 +213,25 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>@abstract Retrieve the current user level push notification state.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This setting is per user, not per device.</p>
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoUser.html">EkoUser</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nf">userForId</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">userId</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">isAllowedWithCompletion</span><span class="p">:</span>
+    <span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nonnull</span><span class="p">)(</span><span class="n">BOOL</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">user</span><span class="p">(</span><span class="n">forId</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoUser.html">EkoUser</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isAllowed</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Int32</span><span class="p">,</span> <span class="kt">UnsafeMutablePointer</span><span class="o">&lt;</span><span class="kt">Int32</span><span class="o">&gt;</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -219,17 +242,54 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>userId</em>
+                                <em>completion</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>userId</p>
+                                  <p>A block executed when the request has completed.</p>
                                 </div>
                               </td>
                             </tr>
                           </tbody>
                         </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoUserNotificationsManager(im)init"></a>
+                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)EkoUserNotificationsManager(im)init">-init</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-unavailable">
+                        <p class="aside-title">Unavailable</p>
+                        
+                      </div>
+                      <div class="abstract">
+                        <p>Block call of <code>init</code> and <code>new</code> because this object cannot be created directly
+*</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="n">init</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
