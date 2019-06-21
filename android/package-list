@@ -1,7 +1,7 @@
 com.ekoapp.ekosdk
 com.ekoapp.ekosdk.adapter
-com.ekoapp.ekosdk.auth
 com.ekoapp.ekosdk.exception
+com.ekoapp.ekosdk.log
 com.ekoapp.ekosdk.membership
 com.ekoapp.ekosdk.messaging
 com.ekoapp.ekosdk.messaging.data
