@@ -87,13 +87,19 @@
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Enums.html#/c:@E@EkoChannelMembershipType">EkoChannelMembershipType</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums.html#/c:@E@EkoChannelType">EkoChannelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/c:@E@EkoDataStatus">EkoDataStatus</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums.html#/c:@E@EkoErrorCode">EkoErrorCode</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums.html#/c:@E@EkoMediaSize">EkoMediaSize</a>
+                <a href="../Enums/EkoMediaSize.html">EkoMediaSize</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums.html#/c:@E@EkoMessageType">EkoMessageType</a>
@@ -143,7 +149,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Uniquely identifies this message.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -174,7 +181,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Identifies the channel where this message has been posted.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -205,7 +213,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>The message author <code>userId</code>.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -236,7 +245,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>The message author.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -267,7 +277,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>The message data.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -298,7 +309,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>The message type.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -329,7 +341,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Whether the message has been deleted.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -360,7 +373,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>The sync state of the message.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -455,7 +469,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>The message creation time.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -486,7 +501,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>The last time this message has been updated.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -517,7 +533,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The message tags</p>
+                        <p>The message tags.</p>
 
                       </div>
                       <div class="declaration">
@@ -536,12 +552,76 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoMessage(py)parentId"></a>
+                    <a name="//apple_ref/objc/Property/parentId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMessage(py)parentId">parentId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The messageId of the parent message.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">parentId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">parentId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoMessage(py)childrenNumber"></a>
+                    <a name="//apple_ref/objc/Property/childrenNumber" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMessage(py)childrenNumber">childrenNumber</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The number of children of this message.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSUInteger</span> <span class="n">childrenNumber</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">childrenNumber</span><span class="p">:</span> <span class="kt">UInt</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-06-21)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-09-18)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

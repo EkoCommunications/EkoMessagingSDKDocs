@@ -58,7 +58,7 @@
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelNotificationsManager.h",
-      "line": 48,
+      "line": 50,
       "symbol": "EkoChannelNotificationsManager.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
@@ -79,7 +79,7 @@
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelParticipation.h",
-      "line": 95,
+      "line": 96,
       "symbol": "EkoChannelParticipation.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
@@ -198,191 +198,212 @@
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 44,
-      "symbol": "EkoDataStatus",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 44,
-      "symbol": "EkoDataStatus",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 70,
-      "symbol": "EkoErrorCode.BusinessError",
+      "line": 58,
+      "symbol": "EkoDataStatus.EkoDataStatusNotExist",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 71,
-      "symbol": "EkoErrorCode.BadRequestError",
+      "line": 59,
+      "symbol": "EkoDataStatus.EkoDataStatusLocal",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 72,
-      "symbol": "EkoErrorCode.UnauthorizedError",
+      "line": 60,
+      "symbol": "EkoDataStatus.EkoDataStatusFresh",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 73,
-      "symbol": "EkoErrorCode.ItemNotFound",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 74,
-      "symbol": "EkoErrorCode.ForbiddenError",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 75,
-      "symbol": "EkoErrorCode.PermissionDenied",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 76,
-      "symbol": "EkoErrorCode.UserIsMuted",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 77,
-      "symbol": "EkoErrorCode.ChannelIsMuted",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 78,
-      "symbol": "EkoErrorCode.UserIsBanned",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 79,
-      "symbol": "EkoErrorCode.NumberOfMemberExceed",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 80,
-      "symbol": "EkoErrorCode.ExemptFromBan",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 81,
-      "symbol": "EkoErrorCode.MaxRepetitionExceed",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 82,
-      "symbol": "EkoErrorCode.BanWordFound",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 83,
-      "symbol": "EkoErrorCode.LinkNotAllowed",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 84,
-      "symbol": "EkoErrorCode.TooManyMemberError",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 85,
-      "symbol": "EkoErrorCode.RateLimitError",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 86,
-      "symbol": "EkoErrorCode.GlobalBanError",
+      "line": 61,
+      "symbol": "EkoDataStatus.EkoDataStatusError",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 87,
-      "symbol": "EkoErrorCode.Conflict",
+      "symbol": "EkoErrorCode.EkoErrorCodeBusiness",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 88,
+      "symbol": "EkoErrorCode.EkoErrorCodeBadRequest",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 89,
+      "symbol": "EkoErrorCode.EkoErrorCodeUnauthorized",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 90,
-      "symbol": "EkoErrorCode.Unknown",
+      "symbol": "EkoErrorCode.EkoErrorCodeItemNotFound",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 91,
-      "symbol": "EkoErrorCode.InvalidParameter",
+      "symbol": "EkoErrorCode.EkoErrorCodeForbiddenError",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 92,
-      "symbol": "EkoErrorCode.MalformedData",
+      "symbol": "EkoErrorCode.EkoErrorCodePermissionDenied",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 93,
-      "symbol": "EkoErrorCode.ErrorQueryInProgress",
+      "symbol": "EkoErrorCode.EkoErrorCodeUserIsMuted",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 94,
-      "symbol": "EkoErrorCode.ConnectionError",
+      "symbol": "EkoErrorCode.EkoErrorCodeChannelIsMuted",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 95,
+      "symbol": "EkoErrorCode.EkoErrorCodeUserIsBanned",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 96,
+      "symbol": "EkoErrorCode.EkoErrorCodeNumberOfMemberExceed",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 97,
-      "symbol": "EkoChannelMembershipType",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "symbol": "EkoErrorCode.EkoErrorCodeExemptFromBan",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 97,
-      "symbol": "EkoChannelMembershipType",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "line": 98,
+      "symbol": "EkoErrorCode.EkoErrorCodeMaxRepetitionExceed",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 99,
+      "symbol": "EkoErrorCode.EkoErrorCodeBanWordFound",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 100,
+      "symbol": "EkoErrorCode.EkoErrorCodeLinkNotAllowed",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 101,
+      "symbol": "EkoErrorCode.EkoErrorCodeTooManyMember",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 102,
+      "symbol": "EkoErrorCode.EkoErrorCodeRateLimit",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 103,
+      "symbol": "EkoErrorCode.EkoErrorCodeGlobalBan",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 104,
+      "symbol": "EkoErrorCode.EkoErrorCodeConflict",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 107,
+      "symbol": "EkoErrorCode.EkoErrorCodeUnknown",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 108,
+      "symbol": "EkoErrorCode.EkoErrorCodeInvalidParameter",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 109,
+      "symbol": "EkoErrorCode.EkoErrorCodeMalformedData",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 110,
+      "symbol": "EkoErrorCode.EkoErrorCodeQueryInProgress",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 111,
+      "symbol": "EkoErrorCode.EkoErrorCodeConnectionError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 124,
+      "symbol": "EkoChannelMembershipType.EkoChannelMembershipTypeNone",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 125,
+      "symbol": "EkoChannelMembershipType.EkoChannelMembershipTypeMember",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 126,
+      "symbol": "EkoChannelMembershipType.EkoChannelMembershipTypeBanned",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
@@ -394,98 +415,70 @@
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
-      "line": 19,
+      "line": 23,
       "symbol": "EkoMessageType.EkoMessageTypeText",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
-      "line": 20,
+      "line": 24,
       "symbol": "EkoMessageType.EkoMessageTypeImage",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
-      "line": 21,
+      "line": 25,
       "symbol": "EkoMessageType.EkoMessageTypeCustom",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
-      "line": 28,
+      "line": 32,
       "symbol": "EkoSyncState.EkoSyncStateDefault",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
-      "line": 29,
+      "line": 33,
       "symbol": "EkoSyncState.EkoSyncStateSynced",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
-      "line": 30,
+      "line": 34,
       "symbol": "EkoSyncState.EkoSyncStateSyncing",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
-      "line": 31,
+      "line": 35,
       "symbol": "EkoSyncState.EkoSyncStateError",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
-      "line": 39,
-      "symbol": "EkoMediaSize.EkoMediaSizeSmall",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
-      "line": 41,
-      "symbol": "EkoMediaSize.EkoMediaSizeMedium",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
-      "line": 43,
-      "symbol": "EkoMediaSize.EkoMediaSizeLarge",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
-      "line": 45,
-      "symbol": "EkoMediaSize.EkoMediaSizeFull",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessageEditor.h",
-      "line": 55,
+      "line": 57,
       "symbol": "EkoMessageEditor.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessageFlagger.h",
-      "line": 56,
+      "line": 57,
       "symbol": "EkoMessageFlagger.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessageRepository.h",
-      "line": 65,
+      "line": 257,
       "symbol": "EkoMessageRepository.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
@@ -506,7 +499,7 @@
     },
     {
       "file": "/Users/zntfdr/Developer/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoUserFlagger.h",
-      "line": 55,
+      "line": 56,
       "symbol": "EkoUserFlagger.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"

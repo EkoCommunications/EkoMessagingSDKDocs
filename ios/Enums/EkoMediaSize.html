@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>EkoChannelNotificationsManager Class Reference</title>
+    <title>EkoMediaSize Enumeration Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/objc/Class/EkoChannelNotificationsManager" class="dashAnchor"></a>
-    <a title="EkoChannelNotificationsManager Class Reference"></a>
+    <a name="//apple_ref/objc/Enum/EkoMediaSize" class="dashAnchor"></a>
+    <a title="EkoMediaSize Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">EkoChat Docs</a></p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">EkoChat Reference</a>
         <img id="carat" src="../img/carat.png" />
-        EkoChannelNotificationsManager Class Reference
+        EkoMediaSize Enumeration Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -122,14 +122,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>EkoChannelNotificationsManager</h1>
+            <h1>EkoMediaSize</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoChannelNotificationsManager</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">EkoMediaSize</span> <span class="p">{}</span></code></pre>
 
                 </div>
               </div>
-            <p>@abstract Responsible to manage the channel level push notification settings.</p>
+            <p>Media Size</p>
 
           </section>
           <section class="section task-group-section">
@@ -138,9 +138,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EkoChannelNotificationsManager(im)setIsAllowed:completion:"></a>
-                    <a name="//apple_ref/objc/Method/-setIsAllowed:completion:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoChannelNotificationsManager(im)setIsAllowed:completion:">-setIsAllowed:completion:</a>
+                    <a name="/c:@E@EkoMediaSize@EkoMediaSizeSmall"></a>
+                    <a name="//apple_ref/objc/Case/EkoMediaSizeSmall" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EkoMediaSize@EkoMediaSizeSmall">EkoMediaSizeSmall</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -148,58 +148,21 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>@abstract Updates the channel level push notification setting.</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    <p>This setting will take effect on every device used by the user.</p>
-
-</div>
+                        <p>Up to 160 pixels per dimension.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setIsAllowed</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">isAllowed</span>
-          <span class="nf">completion</span><span class="p">:(</span><span class="n">nullable</span> <span class="n"><a href="../Type Definitions.html#/c:EkoUserNotificationsManager.h@T@EkoRequestCompletion">EkoRequestCompletion</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="n">EkoMediaSizeSmall</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setIsAllowed</span><span class="p">(</span><span class="n">_</span> <span class="nv">isAllowed</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Type Definitions.html#/c:EkoUserNotificationsManager.h@T@EkoRequestCompletion">EkoRequestCompletion</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">small</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>isAllowed</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Whether or not the user would like to receive any push notifications.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>completion</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>A block executed when the request has completed.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
                       </div>
                     </section>
                   </div>
@@ -207,9 +170,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EkoChannelNotificationsManager(im)isAllowedWithCompletion:"></a>
-                    <a name="//apple_ref/objc/Method/-isAllowedWithCompletion:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoChannelNotificationsManager(im)isAllowedWithCompletion:">-isAllowedWithCompletion:</a>
+                    <a name="/c:@E@EkoMediaSize@EkoMediaSizeMedium"></a>
+                    <a name="//apple_ref/objc/Case/EkoMediaSizeMedium" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EkoMediaSize@EkoMediaSizeMedium">EkoMediaSizeMedium</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -217,46 +180,21 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>@abstract Retrieve the current channel level push notification state.</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    <p>This setting is per user, not per device.</p>
-
-</div>
+                        <p>Up to 600 pixels per dimension.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">isAllowedWithCompletion</span><span class="p">:</span>
-    <span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nonnull</span><span class="p">)(</span><span class="n">BOOL</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="n">EkoMediaSizeMedium</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isAllowed</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Bool</span><span class="p">,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">medium</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>completion</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>A block executed when the request has completed.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
                       </div>
                     </section>
                   </div>
@@ -264,28 +202,61 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EkoChannelNotificationsManager(im)init"></a>
-                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
-                    <a class="token discouraged" href="#/c:objc(cs)EkoChannelNotificationsManager(im)init">-init</a>
+                    <a name="/c:@E@EkoMediaSize@EkoMediaSizeLarge"></a>
+                    <a name="//apple_ref/objc/Case/EkoMediaSizeLarge" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EkoMediaSize@EkoMediaSizeLarge">EkoMediaSizeLarge</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
-                      <div class="aside aside-unavailable">
-                        <p class="aside-title">Unavailable</p>
-                        
-                      </div>
                       <div class="abstract">
-                        <p>Block call of <code>init</code> and <code>new</code> because this object cannot be created directly</p>
+                        <p>Up to 1500 pixels per dimension.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="n">init</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="n">EkoMediaSizeLarge</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">large</span> <span class="o">=</span> <span class="mi">2</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@EkoMediaSize@EkoMediaSizeFull"></a>
+                    <a name="//apple_ref/objc/Case/EkoMediaSizeFull" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@EkoMediaSize@EkoMediaSizeFull">EkoMediaSizeFull</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Original upload resolution (or same as EkoMediaSizeLarge if image was not uploaded with fullImage set to YES).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">EkoMediaSizeFull</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">full</span> <span class="o">=</span> <span class="mi">3</span></code></pre>
 
                         </div>
                       </div>

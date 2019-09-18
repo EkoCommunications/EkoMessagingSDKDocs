@@ -87,13 +87,19 @@
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Enums.html#/c:@E@EkoChannelMembershipType">EkoChannelMembershipType</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums.html#/c:@E@EkoChannelType">EkoChannelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/c:@E@EkoDataStatus">EkoDataStatus</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums.html#/c:@E@EkoErrorCode">EkoErrorCode</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums.html#/c:@E@EkoMediaSize">EkoMediaSize</a>
+                <a href="../Enums/EkoMediaSize.html">EkoMediaSize</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums.html#/c:@E@EkoMessageType">EkoMessageType</a>
@@ -225,7 +231,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create a new text message (convenience method)</p>
+                        <p>Creates a new text message (convenience method),</p>
 
                       </div>
                       <div class="declaration">
@@ -240,6 +246,76 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createTextMessage</span><span class="p">(</span><span class="n">withChannelId</span> <span class="nv">channelId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoMessage.html">EkoMessage</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>channelId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The channel we want to create a message in.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>text</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The text message to be sent.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The EkoMessage live object.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoMessageRepository(im)createTextMessageWithChannelId:text:tags:"></a>
+                    <a name="//apple_ref/objc/Method/-createTextMessageWithChannelId:text:tags:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createTextMessageWithChannelId:text:tags:">-createTextMessageWithChannelId:text:tags:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new text message (convenience method).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoMessage.html">EkoMessage</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">createTextMessageWithChannelId</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">channelId</span>
+                              <span class="nf">text</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">text</span>
+                              <span class="nf">tags</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">tags</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createTextMessage</span><span class="p">(</span><span class="n">withChannelId</span> <span class="nv">channelId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoMessage.html">EkoMessage</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -271,8 +347,197 @@
                                 </div>
                               </td>
                             </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of tags (you can store here whatever you want)</p>
+                                </div>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoMessageRepository(im)createTextMessageWithChannelId:text:parentId:"></a>
+                    <a name="//apple_ref/objc/Method/-createTextMessageWithChannelId:text:parentId:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createTextMessageWithChannelId:text:parentId:">-createTextMessageWithChannelId:text:parentId:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new text message (convenience method),</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoMessage.html">EkoMessage</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">createTextMessageWithChannelId</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">channelId</span>
+                              <span class="nf">text</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">text</span>
+                          <span class="nf">parentId</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">parentId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createTextMessage</span><span class="p">(</span><span class="n">withChannelId</span> <span class="nv">channelId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">parentId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoMessage.html">EkoMessage</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>channelId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The channel we want to create a message in.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>text</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The text message to be sent.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parentId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new message parent (note: this cannot be changed later).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The EkoMessage live object.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoMessageRepository(im)createTextMessageWithChannelId:text:tags:parentId:"></a>
+                    <a name="//apple_ref/objc/Method/-createTextMessageWithChannelId:text:tags:parentId:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createTextMessageWithChannelId:text:tags:parentId:">-createTextMessageWithChannelId:text:tags:parentId:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new text message (convenience method),</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoMessage.html">EkoMessage</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">createTextMessageWithChannelId</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">channelId</span>
+                              <span class="nf">text</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">text</span>
+                              <span class="nf">tags</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">tags</span>
+                          <span class="nf">parentId</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">parentId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createTextMessage</span><span class="p">(</span><span class="n">withChannelId</span> <span class="nv">channelId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?,</span> <span class="nv">parentId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoMessage.html">EkoMessage</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>channelId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The channel we want to create a message in.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>text</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The text message to be sent.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of tags (you can store here whatever you want)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parentId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new message parent (note: this cannot be changed later).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The EkoMessage live object.</p>
                       </div>
                     </section>
                   </div>
@@ -290,7 +555,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create a new image message (convenience method)</p>
+                        <p>Creates a new image message (convenience method).</p>
 
                       </div>
                       <div class="declaration">
@@ -322,7 +587,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>A channel Identifier</p>
+                                  <p>The channel we want to create a message in.</p>
                                 </div>
                               </td>
                             </tr>
@@ -334,7 +599,19 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>UIImage to be sent (will be sent as JPG)</p>
+                                  <p>The <code>UIImage</code> to be sent (will be sent as JPG).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>caption</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The image caption.</p>
                                 </div>
                               </td>
                             </tr>
@@ -346,7 +623,103 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>whether or not the image should be sent at full resolution</p>
+                                  <p>Whether or not the image should be sent at full resolution.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code><a href="../Classes/EkoMessage.html">EkoMessage</a></code> live object.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoMessageRepository(im)createImageMessageWithChannelId:image:caption:fullImage:tags:"></a>
+                    <a name="//apple_ref/objc/Method/-createImageMessageWithChannelId:image:caption:fullImage:tags:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createImageMessageWithChannelId:image:caption:fullImage:tags:">-createImageMessageWithChannelId:image:caption:fullImage:tags:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new image message (convenience method).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoMessage.html">EkoMessage</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">createImageMessageWithChannelId</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">channelId</span>
+                              <span class="nf">image</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="nv">image</span>
+                            <span class="nf">caption</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">caption</span>
+                          <span class="nf">fullImage</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">fullImage</span>
+                               <span class="nf">tags</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">tags</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createImageMessage</span><span class="p">(</span><span class="n">withChannelId</span> <span class="nv">channelId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">,</span> <span class="nv">caption</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">fullImage</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoMessage.html">EkoMessage</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>channelId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A channel Identifier.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>image</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>UIImage to be sent (will be sent as JPG).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fullImage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>whether or not the image should be sent at full resolution.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of tags (you can store here whatever you want).</p>
                                 </div>
                               </td>
                             </tr>
@@ -359,9 +732,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:"></a>
-                    <a name="//apple_ref/objc/Method/-messagesWithChannelId:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:">-messagesWithChannelId:</a>
+                    <a name="/c:objc(cs)EkoMessageRepository(im)createImageMessageWithChannelId:image:caption:fullImage:parentId:"></a>
+                    <a name="//apple_ref/objc/Method/-createImageMessageWithChannelId:image:caption:fullImage:parentId:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createImageMessageWithChannelId:image:caption:fullImage:parentId:">-createImageMessageWithChannelId:image:caption:fullImage:parentId:</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -369,10 +742,253 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates a collection of all messages filtered by a channel id</p>
+                        <p>Creates a new image message (convenience method).</p>
 
-<p>When observing changes on the collection, the only time EkoCollectionChange gives back a deletion update (on messages) is when the user has been banned or has left the channel:
- to confirm this, you can also observe changes in the EkoChannel object (if this also gets deleted, you have either left the channel or you&rsquo;ve been banned)</p>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoMessage.html">EkoMessage</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">createImageMessageWithChannelId</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">channelId</span>
+                              <span class="nf">image</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="nv">image</span>
+                            <span class="nf">caption</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">caption</span>
+                          <span class="nf">fullImage</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">fullImage</span>
+                           <span class="nf">parentId</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">parentId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createImageMessage</span><span class="p">(</span><span class="n">withChannelId</span> <span class="nv">channelId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">,</span> <span class="nv">caption</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">fullImage</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">parentId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoMessage.html">EkoMessage</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>channelId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The channel we want to create a message in.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>image</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>UIImage</code> to be sent (will be sent as JPG).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>caption</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The image caption.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fullImage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether or not the image should be sent at full resolution.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parentId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new message parent (note: this cannot be changed later).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code><a href="../Classes/EkoMessage.html">EkoMessage</a></code> live object.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoMessageRepository(im)createImageMessageWithChannelId:image:caption:fullImage:tags:parentId:"></a>
+                    <a name="//apple_ref/objc/Method/-createImageMessageWithChannelId:image:caption:fullImage:tags:parentId:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createImageMessageWithChannelId:image:caption:fullImage:tags:parentId:">-createImageMessageWithChannelId:image:caption:fullImage:tags:parentId:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new image message.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoMessage.html">EkoMessage</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">createImageMessageWithChannelId</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">channelId</span>
+                              <span class="nf">image</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="nv">image</span>
+                            <span class="nf">caption</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">caption</span>
+                          <span class="nf">fullImage</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">fullImage</span>
+                               <span class="nf">tags</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">tags</span>
+                           <span class="nf">parentId</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">parentId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createImageMessage</span><span class="p">(</span><span class="n">withChannelId</span> <span class="nv">channelId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">,</span> <span class="nv">caption</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">fullImage</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?,</span> <span class="nv">parentId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoMessage.html">EkoMessage</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>channelId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A channel Identifier.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>image</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>UIImage to be sent (will be sent as JPG).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fullImage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>whether or not the image should be sent at full resolution.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of tags (you can store here whatever you want).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parentId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new message parent (note: this cannot be changed later).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:reverse:"></a>
+                    <a name="//apple_ref/objc/Method/-messagesWithChannelId:reverse:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:reverse:">-messagesWithChannelId:reverse:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@abstract Creates a collection of all messages filtered by channel id.</p>
+
+<p>@discussion
+When observing changes on the collection, the only time EkoCollectionChange
+gives back a deletion update (on messages) is when the user has been banned
+or has left the channel:
+to confirm this, you can also observe changes in the EkoChannel object
+(if this also gets deleted, you have either left the channel or you&rsquo;ve been
+banned).</p>
+
+<p>@remarks
+Let&rsquo;s say that a channel has the messages (in chronological order):
+ABC&hellip;XYZ</p>
+
+<p>When <code>reverse</code> is set to:</p>
+
+<ul>
+<li><p><code>false</code>, we will fetch the first (oldest)
+messages in chronological order: ABC first, then the next page etc.</p></li>
+<li><p><code>true</code>, we will fetch the last (newest) messages
+in reverse-chronological order: ZYX first, then the previous page etc.</p></li>
+</ul>
+
+<p>It&rsquo;s up to the developer to call the right <code>loadNext</code>/<code>loadPrevious</code> page in
+the returned collection based on the <code>reverse</code> value:</p>
+<li><p><code>loadNext</code> loads newer messages in comparison with the last loaded page</p></li>
+<li><p><code>loadPrevious</code> loads older messages in comparison with the last loaded page</p></li>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>when asking for more messages, based on the reverse preference,
+you&rsquo;ll need to ask for the next page (if the reverse is <code>false</code>) or the
+previous page (if the reverse is <code>true</code>).</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -380,14 +996,426 @@
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoCollection.html">EkoCollection</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoMessage.html">EkoMessage</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nf">messagesWithChannelId</span><span class="p">:</span>
-    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">channelId</span><span class="p">;</span></code></pre>
+                                             <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">channelId</span>
+                                                       <span class="nf">reverse</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">reverse</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">messages</span><span class="p">(</span><span class="n">withChannelId</span> <span class="nv">channelId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoCollection.html">EkoCollection</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoMessage.html">EkoMessage</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">messages</span><span class="p">(</span><span class="n">withChannelId</span> <span class="nv">channelId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">reverse</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoCollection.html">EkoCollection</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoMessage.html">EkoMessage</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>channelId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Channel of which messages we are interested in.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>reverse</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether we&rsquo;d like the collection in chronological order or not.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The messages collection.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:includingTags:excludingTags:reverse:"></a>
+                    <a name="//apple_ref/objc/Method/-messagesWithChannelId:includingTags:excludingTags:reverse:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:includingTags:excludingTags:reverse:">-messagesWithChannelId:includingTags:excludingTags:reverse:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates and returns a collection of all messages filtered by the given
+<code>channelId</code>, and tags (convenience method).</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>A message is matched when it contains ANY tag listed in includingTags,
+and contains NONE of the tags listed in excludingTags.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoCollection.html">EkoCollection</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoMessage.html">EkoMessage</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">messagesWithChannelId</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">channelId</span>
+            <span class="nf">includingTags</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">includingTags</span>
+            <span class="nf">excludingTags</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">excludingTags</span>
+                  <span class="nf">reverse</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">reverse</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">messages</span><span class="p">(</span><span class="n">withChannelId</span> <span class="nv">channelId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">includingTags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span> <span class="nv">excludingTags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span> <span class="nv">reverse</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoCollection.html">EkoCollection</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoMessage.html">EkoMessage</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>channelId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The channel identifier of the channel we&rsquo;re interested in</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>includingTags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The list of required message tags, pass an empty array to
+ignore this requirement.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>excludingTags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The list of tags required not to be set in the messages,
+pass an empty array to ignore this requirement.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code><a href="../Classes/EkoMessage.html">EkoMessage</a></code> live collection.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:filterByParentId:parentId:reverse:"></a>
+                    <a name="//apple_ref/objc/Method/-messagesWithChannelId:filterByParentId:parentId:reverse:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:filterByParentId:parentId:reverse:">-messagesWithChannelId:filterByParentId:parentId:reverse:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates and returns a collection of all messages filtered by the given
+<code>channelId</code>, and <code>parentId</code> (convenience method).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoCollection.html">EkoCollection</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoMessage.html">EkoMessage</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">messagesWithChannelId</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">channelId</span>
+         <span class="nf">filterByParentId</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">filterByParentId</span>
+                 <span class="nf">parentId</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">parentId</span>
+                  <span class="nf">reverse</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">reverse</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">messages</span><span class="p">(</span><span class="n">withChannelId</span> <span class="nv">channelId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">filterByParentId</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">parentId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">reverse</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoCollection.html">EkoCollection</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoMessage.html">EkoMessage</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>channelId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The channel identifier of the channel we&rsquo;re interested in</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>filterByParentId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether we&rsquo;re initerested in filtering by parentId or
+not.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parentId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>messageId</code> of the parent whose child we&rsquo;re interested in.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code><a href="../Classes/EkoMessage.html">EkoMessage</a></code> live collection.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:includingTags:excludingTags:filterByParentId:parentId:reverse:"></a>
+                    <a name="//apple_ref/objc/Method/-messagesWithChannelId:includingTags:excludingTags:filterByParentId:parentId:reverse:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:includingTags:excludingTags:filterByParentId:parentId:reverse:">-messagesWithChannelId:includingTags:excludingTags:filterByParentId:parentId:reverse:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates and returns a collection of all messages filtered by the given
+<code>channelId</code>, tags, and <code>parentId</code>.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>A message is matched when it contains ANY tag listed in includingTags,
+and contains NONE of the tags listed in excludingTags.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoCollection.html">EkoCollection</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoMessage.html">EkoMessage</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">messagesWithChannelId</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">channelId</span>
+            <span class="nf">includingTags</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">includingTags</span>
+            <span class="nf">excludingTags</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">excludingTags</span>
+         <span class="nf">filterByParentId</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">filterByParentId</span>
+                 <span class="nf">parentId</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">parentId</span>
+                  <span class="nf">reverse</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">reverse</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">messages</span><span class="p">(</span><span class="n">withChannelId</span> <span class="nv">channelId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">includingTags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span> <span class="nv">excludingTags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span> <span class="nv">filterByParentId</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">parentId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">reverse</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoCollection.html">EkoCollection</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoMessage.html">EkoMessage</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>channelId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The channel identifier of the channel we&rsquo;re interested in</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>includingTags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The list of required message tags, pass an empty array to
+ignore this requirement.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>excludingTags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The list of tags required not to be set in the messages,
+pass an empty array to ignore this requirement.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>filterByParentId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether we&rsquo;re initerested in filtering by parentId or
+not.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parentId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>messageId</code> of the parent whose child we&rsquo;re interested in.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>reverse</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether we&rsquo;d like the collection in chronological order or not.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code><a href="../Classes/EkoMessage.html">EkoMessage</a></code> live collection.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoMessageRepository(im)setTagsForMessage:tags:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-setTagsForMessage:tags:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)setTagsForMessage:tags:completion:">-setTagsForMessage:tags:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the tags for the given message.</p>
+
+<p>As long as the user is a member of a channel, the user can set the tags to any
+message of that channel.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setTagsForMessage</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">messageId</span>
+                     <span class="nf">tags</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">tags</span>
+               <span class="nf">completion</span><span class="p">:(</span><span class="n">nullable</span> <span class="n"><a href="../Type Definitions.html#/c:EkoUserNotificationsManager.h@T@EkoRequestCompletion">EkoRequestCompletion</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setTagsForMessage</span><span class="p">(</span><span class="n">_</span> <span class="nv">messageId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Type Definitions.html#/c:EkoUserNotificationsManager.h@T@EkoRequestCompletion">EkoRequestCompletion</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>messageId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A valid Message Id</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of tags</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -428,7 +1456,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-06-21)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-09-18)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
