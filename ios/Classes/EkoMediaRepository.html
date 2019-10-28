@@ -110,10 +110,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Type Definitions.html">Type Definitions</a>
+            <a href="../Type%20Definitions.html">Type Definitions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:EkoUserNotificationsManager.h@T@EkoRequestCompletion">EkoRequestCompletion</a>
+                <a href="../Type%20Definitions.html#/c:EkoUserNotificationsManager.h@T@EkoRequestCompletion">EkoRequestCompletion</a>
               </li>
             </ul>
           </li>
@@ -300,6 +300,71 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)EkoMediaRepository(im)getFileForMessageId:resultHandler:"></a>
+                    <a name="//apple_ref/objc/Method/-getFileForMessageId:resultHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMediaRepository(im)getFileForMessageId:resultHandler:">-getFileForMessageId:resultHandler:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Downloads the file for the given messageId. This method resumes (or starts) the download for the file.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">getFileForMessageId</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">messageId</span>
+              <span class="nf">resultHandler</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nonnull</span><span class="p">)(</span><span class="n">NSData</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span>
+                                              <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">resultHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getFileForMessageId</span><span class="p">(</span><span class="n">_</span> <span class="nv">messageId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">resultHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Data</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>messageId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A message Identifier</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>resultHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the block to be called with the requested file (or eventual error)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)EkoMediaRepository(im)cancelGetMediaForMessageId:size:"></a>
                     <a name="//apple_ref/objc/Method/-cancelGetMediaForMessageId:size:" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)EkoMediaRepository(im)cancelGetMediaForMessageId:size:">-cancelGetMediaForMessageId:size:</a>
@@ -397,8 +462,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-09-18)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-10-28)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
