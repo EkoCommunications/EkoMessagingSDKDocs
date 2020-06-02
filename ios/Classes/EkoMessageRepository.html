@@ -64,6 +64,12 @@
                 <a href="../Classes/EkoMessageFlagger.html">EkoMessageFlagger</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/EkoMessageReaction.html">EkoMessageReaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EkoMessageReactor.html">EkoMessageReactor</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/EkoMessageRepository.html">EkoMessageRepository</a>
               </li>
               <li class="nav-group-task">
@@ -87,6 +93,9 @@
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Enums.html#/c:@E@EkoChannelCreateType">EkoChannelCreateType</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums.html#/c:@E@EkoChannelMembershipType">EkoChannelMembershipType</a>
               </li>
               <li class="nav-group-task">
@@ -105,7 +114,16 @@
                 <a href="../Enums.html#/c:@E@EkoMessageType">EkoMessageType</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums.html#/c:@E@EkoReferenceType">EkoReferenceType</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums.html#/c:@E@EkoSyncState">EkoSyncState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/c:@E@EkoUserFeedSortOption">EkoUserFeedSortOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/c:@E@EkoUserSortOption">EkoUserSortOption</a>
               </li>
             </ul>
           </li>
@@ -172,7 +190,7 @@
                     <code>
                     <a name="/c:objc(cs)EkoMessageRepository(im)initWithClient:"></a>
                     <a name="//apple_ref/objc/Method/-initWithClient:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)initWithClient:">-initWithClient:</a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)initWithClient:">-initWithClient:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -223,7 +241,7 @@
                     <code>
                     <a name="/c:objc(cs)EkoMessageRepository(im)createCustomMessageWithChannelId:data:"></a>
                     <a name="//apple_ref/objc/Method/-createCustomMessageWithChannelId:data:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createCustomMessageWithChannelId:data:">-createCustomMessageWithChannelId:data:</a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createCustomMessageWithChannelId:data:">-createCustomMessageWithChannelId:<wbr>data:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -238,11 +256,12 @@
 that an object that may be converted to JSON must have the following
 properties:</p>
 
-</div>
+</div><ul>
 <li><p>Top level object is an NSArray or NSDictionary.</p></li>
 <li><p>All objects are NSString, NSNumber, NSArray, NSDictionary, or NSNull.</p></li>
 <li><p>All dictionary keys are NSStrings.</p></li>
 <li><p>NSNumbers are not NaN or infinity.</p></li>
+</ul>
 
 <p>Failing to do so will result in an exception.</p>
 
@@ -306,7 +325,7 @@ properties:</p>
                     <code>
                     <a name="/c:objc(cs)EkoMessageRepository(im)createCustomMessageWithChannelId:data:tags:"></a>
                     <a name="//apple_ref/objc/Method/-createCustomMessageWithChannelId:data:tags:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createCustomMessageWithChannelId:data:tags:">-createCustomMessageWithChannelId:data:tags:</a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createCustomMessageWithChannelId:data:tags:">-createCustomMessageWithChannelId:<wbr>data:<wbr>tags:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -321,11 +340,12 @@ properties:</p>
 that an object that may be converted to JSON must have the following
 properties:</p>
 
-</div>
+</div><ul>
 <li><p>Top level object is an NSArray or NSDictionary.</p></li>
 <li><p>All objects are NSString, NSNumber, NSArray, NSDictionary, or NSNull.</p></li>
 <li><p>All dictionary keys are NSStrings.</p></li>
 <li><p>NSNumbers are not NaN or infinity.</p></li>
+</ul>
 
 <p>Failing to do so will result in an exception.</p>
 
@@ -398,7 +418,7 @@ properties:</p>
                     <code>
                     <a name="/c:objc(cs)EkoMessageRepository(im)createCustomMessageWithChannelId:data:parentId:"></a>
                     <a name="//apple_ref/objc/Method/-createCustomMessageWithChannelId:data:parentId:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createCustomMessageWithChannelId:data:parentId:">-createCustomMessageWithChannelId:data:parentId:</a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createCustomMessageWithChannelId:data:parentId:">-createCustomMessageWithChannelId:<wbr>data:<wbr>parentId:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -413,11 +433,12 @@ properties:</p>
 that an object that may be converted to JSON must have the following
 properties:</p>
 
-</div>
+</div><ul>
 <li><p>Top level object is an NSArray or NSDictionary.</p></li>
 <li><p>All objects are NSString, NSNumber, NSArray, NSDictionary, or NSNull.</p></li>
 <li><p>All dictionary keys are NSStrings.</p></li>
 <li><p>NSNumbers are not NaN or infinity.</p></li>
+</ul>
 
 <p>Failing to do so will result in an exception.</p>
 
@@ -493,7 +514,7 @@ properties:</p>
                     <code>
                     <a name="/c:objc(cs)EkoMessageRepository(im)createCustomMessageWithChannelId:data:tags:parentId:"></a>
                     <a name="//apple_ref/objc/Method/-createCustomMessageWithChannelId:data:tags:parentId:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createCustomMessageWithChannelId:data:tags:parentId:">-createCustomMessageWithChannelId:data:tags:parentId:</a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createCustomMessageWithChannelId:data:tags:parentId:">-createCustomMessageWithChannelId:<wbr>data:<wbr>tags:<wbr>parentId:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -508,11 +529,12 @@ properties:</p>
 that an object that may be converted to JSON must have the following
 properties:</p>
 
-</div>
+</div><ul>
 <li><p>Top level object is an NSArray or NSDictionary.</p></li>
 <li><p>All objects are NSString, NSNumber, NSArray, NSDictionary, or NSNull.</p></li>
 <li><p>All dictionary keys are NSStrings.</p></li>
 <li><p>NSNumbers are not NaN or infinity.</p></li>
+</ul>
 
 <p>Failing to do so will result in an exception.</p>
 
@@ -602,7 +624,7 @@ properties:</p>
                     <code>
                     <a name="/c:objc(cs)EkoMessageRepository(im)createTextMessageWithChannelId:text:"></a>
                     <a name="//apple_ref/objc/Method/-createTextMessageWithChannelId:text:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createTextMessageWithChannelId:text:">-createTextMessageWithChannelId:text:</a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createTextMessageWithChannelId:text:">-createTextMessageWithChannelId:<wbr>text:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -671,7 +693,7 @@ properties:</p>
                     <code>
                     <a name="/c:objc(cs)EkoMessageRepository(im)createTextMessageWithChannelId:text:tags:"></a>
                     <a name="//apple_ref/objc/Method/-createTextMessageWithChannelId:text:tags:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createTextMessageWithChannelId:text:tags:">-createTextMessageWithChannelId:text:tags:</a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createTextMessageWithChannelId:text:tags:">-createTextMessageWithChannelId:<wbr>text:<wbr>tags:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -749,7 +771,7 @@ properties:</p>
                     <code>
                     <a name="/c:objc(cs)EkoMessageRepository(im)createTextMessageWithChannelId:text:parentId:"></a>
                     <a name="//apple_ref/objc/Method/-createTextMessageWithChannelId:text:parentId:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createTextMessageWithChannelId:text:parentId:">-createTextMessageWithChannelId:text:parentId:</a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createTextMessageWithChannelId:text:parentId:">-createTextMessageWithChannelId:<wbr>text:<wbr>parentId:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -831,7 +853,7 @@ properties:</p>
                     <code>
                     <a name="/c:objc(cs)EkoMessageRepository(im)createTextMessageWithChannelId:text:tags:parentId:"></a>
                     <a name="//apple_ref/objc/Method/-createTextMessageWithChannelId:text:tags:parentId:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createTextMessageWithChannelId:text:tags:parentId:">-createTextMessageWithChannelId:text:tags:parentId:</a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createTextMessageWithChannelId:text:tags:parentId:">-createTextMessageWithChannelId:<wbr>text:<wbr>tags:<wbr>parentId:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -926,7 +948,7 @@ properties:</p>
                     <code>
                     <a name="/c:objc(cs)EkoMessageRepository(im)createImageMessageWithChannelId:image:caption:fullImage:"></a>
                     <a name="//apple_ref/objc/Method/-createImageMessageWithChannelId:image:caption:fullImage:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createImageMessageWithChannelId:image:caption:fullImage:">-createImageMessageWithChannelId:image:caption:fullImage:</a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createImageMessageWithChannelId:image:caption:fullImage:">-createImageMessageWithChannelId:<wbr>image:<wbr>caption:<wbr>fullImage:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1021,7 +1043,7 @@ properties:</p>
                     <code>
                     <a name="/c:objc(cs)EkoMessageRepository(im)createImageMessageWithChannelId:image:caption:fullImage:tags:"></a>
                     <a name="//apple_ref/objc/Method/-createImageMessageWithChannelId:image:caption:fullImage:tags:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createImageMessageWithChannelId:image:caption:fullImage:tags:">-createImageMessageWithChannelId:image:caption:fullImage:tags:</a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createImageMessageWithChannelId:image:caption:fullImage:tags:">-createImageMessageWithChannelId:<wbr>image:<wbr>caption:<wbr>fullImage:<wbr>tags:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1113,7 +1135,7 @@ properties:</p>
                     <code>
                     <a name="/c:objc(cs)EkoMessageRepository(im)createImageMessageWithChannelId:image:caption:fullImage:parentId:"></a>
                     <a name="//apple_ref/objc/Method/-createImageMessageWithChannelId:image:caption:fullImage:parentId:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createImageMessageWithChannelId:image:caption:fullImage:parentId:">-createImageMessageWithChannelId:image:caption:fullImage:parentId:</a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createImageMessageWithChannelId:image:caption:fullImage:parentId:">-createImageMessageWithChannelId:<wbr>image:<wbr>caption:<wbr>fullImage:<wbr>parentId:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1221,7 +1243,7 @@ properties:</p>
                     <code>
                     <a name="/c:objc(cs)EkoMessageRepository(im)createImageMessageWithChannelId:image:caption:fullImage:tags:parentId:"></a>
                     <a name="//apple_ref/objc/Method/-createImageMessageWithChannelId:image:caption:fullImage:tags:parentId:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createImageMessageWithChannelId:image:caption:fullImage:tags:parentId:">-createImageMessageWithChannelId:image:caption:fullImage:tags:parentId:</a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createImageMessageWithChannelId:image:caption:fullImage:tags:parentId:">-createImageMessageWithChannelId:<wbr>image:<wbr>caption:<wbr>fullImage:<wbr>tags:<wbr>parentId:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1326,7 +1348,7 @@ properties:</p>
                     <code>
                     <a name="/c:objc(cs)EkoMessageRepository(im)createFileMessageWithChannelId:data:filename:tags:parentId:completion:"></a>
                     <a name="//apple_ref/objc/Method/-createFileMessageWithChannelId:data:filename:tags:parentId:completion:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createFileMessageWithChannelId:data:filename:tags:parentId:completion:">-createFileMessageWithChannelId:data:filename:tags:parentId:completion:</a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)createFileMessageWithChannelId:data:filename:tags:parentId:completion:">-createFileMessageWithChannelId:<wbr>data:<wbr>filename:<wbr>tags:<wbr>parentId:<wbr>completion:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1431,7 +1453,7 @@ properties:</p>
                     <code>
                     <a name="/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:reverse:"></a>
                     <a name="//apple_ref/objc/Method/-messagesWithChannelId:reverse:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:reverse:">-messagesWithChannelId:reverse:</a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:reverse:">-messagesWithChannelId:<wbr>reverse:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1464,9 +1486,11 @@ in reverse-chronological order: ZYX first, then the previous page etc.</p></li>
 
 <p>It&rsquo;s up to the developer to call the right <code>loadNext</code>/<code>loadPrevious</code> page in
 the returned collection based on the <code>reverse</code> value:</p>
+
+<ul>
 <li><p><code>loadNext</code> loads newer messages in comparison with the last loaded page</p></li>
 <li><p><code>loadPrevious</code> loads older messages in comparison with the last loaded page</p></li>
-<div class="aside aside-note">
+</ul><div class="aside aside-note">
     <p class="aside-title">Note</p>
     <p>when asking for more messages, based on the reverse preference,
 you&rsquo;ll need to ask for the next page (if the reverse is <code>false</code>) or the
@@ -1533,7 +1557,7 @@ previous page (if the reverse is <code>true</code>).</p>
                     <code>
                     <a name="/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:includingTags:excludingTags:reverse:"></a>
                     <a name="//apple_ref/objc/Method/-messagesWithChannelId:includingTags:excludingTags:reverse:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:includingTags:excludingTags:reverse:">-messagesWithChannelId:includingTags:excludingTags:reverse:</a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:includingTags:excludingTags:reverse:">-messagesWithChannelId:<wbr>includingTags:<wbr>excludingTags:<wbr>reverse:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1625,7 +1649,7 @@ pass an empty array to ignore this requirement.</p>
                     <code>
                     <a name="/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:filterByParentId:parentId:reverse:"></a>
                     <a name="//apple_ref/objc/Method/-messagesWithChannelId:filterByParentId:parentId:reverse:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:filterByParentId:parentId:reverse:">-messagesWithChannelId:filterByParentId:parentId:reverse:</a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:filterByParentId:parentId:reverse:">-messagesWithChannelId:<wbr>filterByParentId:<wbr>parentId:<wbr>reverse:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1710,7 +1734,7 @@ not.</p>
                     <code>
                     <a name="/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:includingTags:excludingTags:filterByParentId:parentId:reverse:"></a>
                     <a name="//apple_ref/objc/Method/-messagesWithChannelId:includingTags:excludingTags:filterByParentId:parentId:reverse:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:includingTags:excludingTags:filterByParentId:parentId:reverse:">-messagesWithChannelId:includingTags:excludingTags:filterByParentId:parentId:reverse:</a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)messagesWithChannelId:includingTags:excludingTags:filterByParentId:parentId:reverse:">-messagesWithChannelId:<wbr>includingTags:<wbr>excludingTags:<wbr>filterByParentId:<wbr>parentId:<wbr>reverse:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1839,9 +1863,65 @@ not.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)EkoMessageRepository(im)allMessageReactionsWithMessageId:"></a>
+                    <a name="//apple_ref/objc/Method/-allMessageReactionsWithMessageId:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)allMessageReactionsWithMessageId:">-allMessageReactionsWithMessageId:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get all of the reactions on the specific message.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoCollection.html">EkoCollection</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoMessageReaction.html">EkoMessageReaction</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">allMessageReactionsWithMessageId</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">messageId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">allMessageReactions</span><span class="p">(</span><span class="n">withMessageId</span> <span class="nv">messageId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoCollection.html">EkoCollection</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoMessageReaction.html">EkoMessageReaction</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>messageId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The related message id to be observed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code><a href="../Classes/EkoMessageReaction.html">EkoMessageReaction</a></code> live collection.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)EkoMessageRepository(im)setTagsForMessage:tags:completion:"></a>
                     <a name="//apple_ref/objc/Method/-setTagsForMessage:tags:completion:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)setTagsForMessage:tags:completion:">-setTagsForMessage:tags:completion:</a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)setTagsForMessage:tags:completion:">-setTagsForMessage:<wbr>tags:<wbr>completion:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1907,6 +1987,38 @@ message of that channel.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)EkoMessageRepository(im)getMessage:"></a>
+                    <a name="//apple_ref/objc/Method/-getMessage:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoMessageRepository(im)getMessage:">-getMessage:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets an existing message by message Id</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoMessage.html">EkoMessage</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nf">getMessage</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">messageId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getMessage</span><span class="p">(</span><span class="n">_</span> <span class="nv">messageId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoMessage.html">EkoMessage</a></span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)EkoMessageRepository(im)init"></a>
                     <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
                     <a class="token discouraged" href="#/c:objc(cs)EkoMessageRepository(im)init">-init</a>
@@ -1940,8 +2052,8 @@ message of that channel.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-11-21)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-06-02)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

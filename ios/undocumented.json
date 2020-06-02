@@ -1,544 +1,726 @@
 {
   "warnings": [
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannel.h",
-      "line": 21,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoBroadcastChannelQuery.h",
+      "line": 16,
+      "symbol": "EkoBroadcastChannelQuery",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoBroadcastChannelQueryBuilder.h",
+      "line": 15,
+      "symbol": "EkoBroadcastChannelQueryBuilder",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoByTypesChannelQuery.h",
+      "line": 16,
+      "symbol": "EkoByTypesChannelQuery",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoByTypesChannelQueryBuilder.h",
+      "line": 16,
+      "symbol": "EkoByTypesChannelQueryBuilder",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannel.h",
+      "line": 20,
       "symbol": "EkoChannelType.EkoChannelTypeStandard",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannel.h",
-      "line": 22,
-      "symbol": "EkoChannelType.EkoChannelTypeConversation",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannel.h",
+      "line": 21,
+      "symbol": "EkoChannelType.EkoChannelTypePrivate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannel.h",
-      "line": 23,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannel.h",
+      "line": 22,
       "symbol": "EkoChannelType.EkoChannelTypeBroadcast",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannel.h",
-      "line": 57,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannel.h",
+      "line": 23,
+      "symbol": "EkoChannelType.EkoChannelTypeConversation",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannel.h",
+      "line": 24,
+      "symbol": "EkoChannelType.EkoChannelTypeByTypes",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannel.h",
+      "line": 31,
+      "symbol": "EkoChannelCreateType.EkoChannelCreateStandard",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannel.h",
+      "line": 32,
+      "symbol": "EkoChannelCreateType.EkoChannelCreatePrivate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannel.h",
+      "line": 66,
       "symbol": "EkoChannel.currentUserMembership",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannel.h",
-      "line": 128,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannel.h",
+      "line": 147,
       "symbol": "EkoChannel.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelMembership.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelFeedServicable.h",
+      "line": 14,
+      "symbol": "EkoChannelFeedServicable",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelMembership.h",
       "line": 14,
       "symbol": "EkoChannelMembership",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelMembershipPrivileges.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelMembershipPrivileges.h",
       "line": 10,
       "symbol": "EkoChannelMembershipPrivileges",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelModeration.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelModeration.h",
       "line": 17,
       "symbol": "EkoChannelModeration",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelNotificationsManager.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelNotificationsManager.h",
       "line": 50,
       "symbol": "EkoChannelNotificationsManager.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelParticipation.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelParticipation.h",
       "line": 16,
       "symbol": "EkoChannelMembershipFilter",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelParticipation.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelParticipation.h",
       "line": 16,
       "symbol": "EkoChannelMembershipFilter",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelParticipation.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelParticipation.h",
       "line": 96,
       "symbol": "EkoChannelParticipation.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelRepository.h",
-      "line": 23,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelQuery.h",
+      "line": 17,
+      "symbol": "EkoChannelQuery",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelQueryBuilder.h",
+      "line": 24,
+      "symbol": "EkoChannelQueryBuilder",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelRepository.h",
+      "line": 25,
       "symbol": "EkoChannelRepository.client",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelRepository.h",
-      "line": 24,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelRepository.h",
+      "line": 26,
       "symbol": "EkoChannelRepository.totalUnreadCount",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelRepository.h",
-      "line": 154,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoChannelRepository.h",
+      "line": 191,
       "symbol": "EkoChannelRepository.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoClient.h",
-      "line": 134,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoClient.h",
+      "line": 141,
       "symbol": "EkoClient.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoClientErrorDelegate.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoClientErrorDelegate.h",
       "line": 9,
       "symbol": "EkoClientErrorDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoCollection.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoCollection.h",
       "line": 26,
       "symbol": "EkoCollection.dataStatus",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoCollection.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoCollection.h",
       "line": 29,
       "symbol": "EkoCollection.loadingStatus",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoCollection.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoCollection.h",
       "line": 32,
       "symbol": "EkoCollection.hasPrevious",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoCollection.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoCollection.h",
       "line": 35,
       "symbol": "EkoCollection.hasNext",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoCollection.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoCollection.h",
       "line": 83,
       "symbol": "EkoCollection.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoConversationChannelQuery.h",
+      "line": 16,
+      "symbol": "EkoConversationChannelQuery",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoConversationChannelQueryBuilder.h",
+      "line": 15,
+      "symbol": "EkoConversationChannelQueryBuilder",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 13,
       "symbol": "EkoConnectionStatus",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 13,
       "symbol": "EkoConnectionStatus",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 24,
       "symbol": "EkoChannelQueryFilter",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 24,
       "symbol": "EkoChannelQueryFilter",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 33,
       "symbol": "EkoLoadingStatus",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 33,
       "symbol": "EkoLoadingStatus",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 58,
       "symbol": "EkoDataStatus.EkoDataStatusNotExist",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 59,
       "symbol": "EkoDataStatus.EkoDataStatusLocal",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 60,
       "symbol": "EkoDataStatus.EkoDataStatusFresh",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 61,
       "symbol": "EkoDataStatus.EkoDataStatusError",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 87,
       "symbol": "EkoErrorCode.EkoErrorCodeBusiness",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 88,
       "symbol": "EkoErrorCode.EkoErrorCodeBadRequest",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 89,
       "symbol": "EkoErrorCode.EkoErrorCodeUnauthorized",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 90,
       "symbol": "EkoErrorCode.EkoErrorCodeItemNotFound",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 91,
       "symbol": "EkoErrorCode.EkoErrorCodeForbiddenError",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 92,
       "symbol": "EkoErrorCode.EkoErrorCodePermissionDenied",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 93,
       "symbol": "EkoErrorCode.EkoErrorCodeUserIsMuted",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 94,
       "symbol": "EkoErrorCode.EkoErrorCodeChannelIsMuted",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 95,
       "symbol": "EkoErrorCode.EkoErrorCodeUserIsBanned",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 96,
       "symbol": "EkoErrorCode.EkoErrorCodeNumberOfMemberExceed",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 97,
       "symbol": "EkoErrorCode.EkoErrorCodeExemptFromBan",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 98,
       "symbol": "EkoErrorCode.EkoErrorCodeMaxRepetitionExceed",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 99,
       "symbol": "EkoErrorCode.EkoErrorCodeBanWordFound",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 100,
       "symbol": "EkoErrorCode.EkoErrorCodeLinkNotAllowed",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 101,
       "symbol": "EkoErrorCode.EkoErrorCodeTooManyMember",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 102,
       "symbol": "EkoErrorCode.EkoErrorCodeRateLimit",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 103,
       "symbol": "EkoErrorCode.EkoErrorCodeGlobalBan",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
       "line": 104,
       "symbol": "EkoErrorCode.EkoErrorCodeConflict",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 107,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 105,
+      "symbol": "EkoErrorCode.EkoErrorCodeReactionNotFound",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 108,
       "symbol": "EkoErrorCode.EkoErrorCodeUnknown",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 108,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 109,
       "symbol": "EkoErrorCode.EkoErrorCodeInvalidParameter",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 109,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 110,
       "symbol": "EkoErrorCode.EkoErrorCodeMalformedData",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 110,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 111,
       "symbol": "EkoErrorCode.EkoErrorCodeQueryInProgress",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 111,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 112,
       "symbol": "EkoErrorCode.EkoErrorCodeConnectionError",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 124,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 125,
       "symbol": "EkoChannelMembershipType.EkoChannelMembershipTypeNone",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 125,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 126,
       "symbol": "EkoChannelMembershipType.EkoChannelMembershipTypeMember",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
-      "line": 126,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 127,
       "symbol": "EkoChannelMembershipType.EkoChannelMembershipTypeBanned",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMediaRepository.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 134,
+      "symbol": "EkoUserSortOption.EkoUserSortOptionDisplayName",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 135,
+      "symbol": "EkoUserSortOption.EkoUserSortOptionFirstCreated",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 136,
+      "symbol": "EkoUserSortOption.EkoUserSortOptionLastCreated",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 143,
+      "symbol": "EkoUserFeedSortOption.EkoUserFeedSortOptionLastCreated",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 144,
+      "symbol": "EkoUserFeedSortOption.EkoUserFeedSortOptionFirstCreated",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 151,
+      "symbol": "EkoSyncState.EkoSyncStateDefault",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 152,
+      "symbol": "EkoSyncState.EkoSyncStateSynced",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 153,
+      "symbol": "EkoSyncState.EkoSyncStateSyncing",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoEnums.h",
+      "line": 154,
+      "symbol": "EkoSyncState.EkoSyncStateError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMediaRepository.h",
       "line": 71,
       "symbol": "EkoMediaRepository.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
-      "line": 24,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
+      "line": 25,
       "symbol": "EkoMessageType.EkoMessageTypeText",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
-      "line": 25,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
+      "line": 26,
       "symbol": "EkoMessageType.EkoMessageTypeImage",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
-      "line": 26,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
+      "line": 27,
       "symbol": "EkoMessageType.EkoMessageTypeFile",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
-      "line": 27,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
+      "line": 28,
       "symbol": "EkoMessageType.EkoMessageTypeCustom",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
-      "line": 34,
-      "symbol": "EkoSyncState.EkoSyncStateDefault",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
-      "line": 35,
-      "symbol": "EkoSyncState.EkoSyncStateSynced",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
-      "line": 36,
-      "symbol": "EkoSyncState.EkoSyncStateSyncing",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessage.h",
-      "line": 37,
-      "symbol": "EkoSyncState.EkoSyncStateError",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessageEditor.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessageEditor.h",
       "line": 65,
       "symbol": "EkoMessageEditor.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessageFlagger.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessageFlagger.h",
       "line": 57,
       "symbol": "EkoMessageFlagger.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessageRepository.h",
-      "line": 375,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessageReaction.h",
+      "line": 21,
+      "symbol": "EkoReferenceType.EkoReferenceTypeMessage",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessageReactor.h",
+      "line": 54,
+      "symbol": "EkoMessageReactor.+new",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoMessageRepository.h",
+      "line": 389,
       "symbol": "EkoMessageRepository.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoNotificationToken.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoNotificationToken.h",
       "line": 11,
       "symbol": "EkoNotificationToken",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoObject.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoObject.h",
       "line": 53,
       "symbol": "EkoObject.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoUserFlagger.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoPrivateChannelQuery.h",
+      "line": 16,
+      "symbol": "EkoPrivateChannelQuery",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoPrivateChannelQueryBuilder.h",
+      "line": 14,
+      "symbol": "EkoPrivateChannelQueryBuilder",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoStandardChannelQuery.h",
+      "line": 16,
+      "symbol": "EkoStandardChannelQuery",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoStandardChannelQueryBuilder.h",
+      "line": 15,
+      "symbol": "EkoStandardChannelQueryBuilder",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoUserFlagger.h",
       "line": 56,
       "symbol": "EkoUserFlagger.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoUserNotificationsManager.h",
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoUserListFeedServicable.h",
+      "line": 14,
+      "symbol": "EkoUserListFeedServicable",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoUserNotificationsManager.h",
       "line": 50,
       "symbol": "EkoUserNotificationsManager.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoUserRepository.h",
-      "line": 22,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoUserRepository.h",
+      "line": 23,
       "symbol": "EkoUserRepository.client",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoUserRepository.h",
-      "line": 38,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoUserRepository.h",
+      "line": 57,
       "symbol": "EkoUserRepository.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoUserRepository.h",
-      "line": 39,
+      "file": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/EkoChat/EkoUserRepository.h",
+      "line": 58,
       "symbol": "EkoUserRepository.+new",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/michaeleko/Documents/ios/EkoMessagingSDKIOS"
+  "source_directory": "/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS"
 }
