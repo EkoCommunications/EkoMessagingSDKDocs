@@ -64,6 +64,12 @@
                 <a href="../Classes/EkoMessageFlagger.html">EkoMessageFlagger</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/EkoMessageReaction.html">EkoMessageReaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EkoMessageReactor.html">EkoMessageReactor</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/EkoMessageRepository.html">EkoMessageRepository</a>
               </li>
               <li class="nav-group-task">
@@ -87,6 +93,9 @@
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Enums.html#/c:@E@EkoChannelCreateType">EkoChannelCreateType</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums.html#/c:@E@EkoChannelMembershipType">EkoChannelMembershipType</a>
               </li>
               <li class="nav-group-task">
@@ -105,7 +114,16 @@
                 <a href="../Enums.html#/c:@E@EkoMessageType">EkoMessageType</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums.html#/c:@E@EkoReferenceType">EkoReferenceType</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums.html#/c:@E@EkoSyncState">EkoSyncState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/c:@E@EkoUserFeedSortOption">EkoUserFeedSortOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/c:@E@EkoUserSortOption">EkoUserSortOption</a>
               </li>
             </ul>
           </li>
@@ -125,7 +143,7 @@
             <h1>EkoChannelRepository</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoChannelRepository</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EkoChannelRepository</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n">EkoChannelFeedServicable</span><span class="o">&gt;</span></code></pre>
 
                 </div>
               </div>
@@ -140,7 +158,7 @@
                     <code>
                     <a name="/c:objc(cs)EkoChannelRepository(im)initWithClient:"></a>
                     <a name="//apple_ref/objc/Method/-initWithClient:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)initWithClient:">-initWithClient:</a>
+                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)initWithClient:">-initWithClient:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -191,13 +209,18 @@
                     <code>
                     <a name="/c:objc(cs)EkoChannelRepository(im)channelsForFilter:"></a>
                     <a name="//apple_ref/objc/Method/-channelsForFilter:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)channelsForFilter:">-channelsForFilter:</a>
+                    <a class="token discouraged" href="#/c:objc(cs)EkoChannelRepository(im)channelsForFilter:">-channelsForFilter:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Deprecated start from 3.0, this no longer be supported in the long term, please use channel collection with builder instead.</p>
+
+                      </div>
                       <div class="abstract">
                         <p>Returns a collection of all channels where the user is in, filtered by the specific mode</p>
 
@@ -247,7 +270,7 @@
                     <code>
                     <a name="/c:objc(cs)EkoChannelRepository(im)createChannel:displayName:type:metadata:users:"></a>
                     <a name="//apple_ref/objc/Method/-createChannel:displayName:type:metadata:users:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)createChannel:displayName:type:metadata:users:">-createChannel:displayName:type:metadata:users:</a>
+                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)createChannel:displayName:type:metadata:users:">-createChannel:<wbr>displayName:<wbr>type:<wbr>metadata:<wbr>users:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -265,14 +288,14 @@
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoChannel.html">EkoChannel</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span>
     <span class="nf">createChannel</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">channelId</span>
       <span class="nf">displayName</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">displayName</span>
-             <span class="nf">type</span><span class="p">:(</span><span class="n"><a href="../Enums.html#/c:@E@EkoChannelType">EkoChannelType</a></span><span class="p">)</span><span class="nv">type</span>
+             <span class="nf">type</span><span class="p">:(</span><span class="n"><a href="../Enums.html#/c:@E@EkoChannelCreateType">EkoChannelCreateType</a></span><span class="p">)</span><span class="nv">type</span>
          <span class="nf">metadata</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*</span><span class="p">,</span> <span class="n">id</span><span class="o">&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">metadata</span>
             <span class="nf">users</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">userIds</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createChannel</span><span class="p">(</span><span class="n">_</span> <span class="nv">channelId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">displayName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums.html#/c:@E@EkoChannelType">EkoChannelType</a></span><span class="p">,</span> <span class="nv">metadata</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="n">users</span> <span class="nv">userIds</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoChannel.html">EkoChannel</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createChannel</span><span class="p">(</span><span class="n">_</span> <span class="nv">channelId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">displayName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums.html#/c:@E@EkoChannelCreateType">EkoChannelCreateType</a></span><span class="p">,</span> <span class="nv">metadata</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="n">users</span> <span class="nv">userIds</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoChannel.html">EkoChannel</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -351,7 +374,7 @@
                     <code>
                     <a name="/c:objc(cs)EkoChannelRepository(im)createChannel:type:users:"></a>
                     <a name="//apple_ref/objc/Method/-createChannel:type:users:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)createChannel:type:users:">-createChannel:type:users:</a>
+                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)createChannel:type:users:">-createChannel:<wbr>type:<wbr>users:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -370,13 +393,13 @@
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoChannel.html">EkoChannel</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span>
     <span class="nf">createChannel</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">channelId</span>
-             <span class="nf">type</span><span class="p">:(</span><span class="n"><a href="../Enums.html#/c:@E@EkoChannelType">EkoChannelType</a></span><span class="p">)</span><span class="nv">type</span>
+             <span class="nf">type</span><span class="p">:(</span><span class="n"><a href="../Enums.html#/c:@E@EkoChannelCreateType">EkoChannelCreateType</a></span><span class="p">)</span><span class="nv">type</span>
             <span class="nf">users</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">userIds</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createChannel</span><span class="p">(</span><span class="n">_</span> <span class="nv">channelId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums.html#/c:@E@EkoChannelType">EkoChannelType</a></span><span class="p">,</span> <span class="n">users</span> <span class="nv">userIds</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoChannel.html">EkoChannel</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createChannel</span><span class="p">(</span><span class="n">_</span> <span class="nv">channelId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums.html#/c:@E@EkoChannelCreateType">EkoChannelCreateType</a></span><span class="p">,</span> <span class="n">users</span> <span class="nv">userIds</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoChannel.html">EkoChannel</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -431,13 +454,18 @@
                     <code>
                     <a name="/c:objc(cs)EkoChannelRepository(im)joinChannel:type:"></a>
                     <a name="//apple_ref/objc/Method/-joinChannel:type:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)joinChannel:type:">-joinChannel:type:</a>
+                    <a class="token discouraged" href="#/c:objc(cs)EkoChannelRepository(im)joinChannel:type:">-joinChannel:<wbr>type:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Start from 3.0 this no longer be supported in the long term, please use createChannel instead.</p>
+
+                      </div>
                       <div class="abstract">
                         <p>Joins a channel by channel Id, if you are already in this channel, it will fetch the existing channel</p>
 
@@ -487,7 +515,7 @@
                     <code>
                     <a name="/c:objc(cs)EkoChannelRepository(im)getChannel:"></a>
                     <a name="//apple_ref/objc/Method/-getChannel:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)getChannel:">-getChannel:</a>
+                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)getChannel:">-getChannel:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -519,7 +547,7 @@
                     <code>
                     <a name="/c:objc(cs)EkoChannelRepository(im)setMetadataForChannel:data:completion:"></a>
                     <a name="//apple_ref/objc/Method/-setMetadataForChannel:data:completion:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)setMetadataForChannel:data:completion:">-setMetadataForChannel:data:completion:</a>
+                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)setMetadataForChannel:data:completion:">-setMetadataForChannel:<wbr>data:<wbr>completion:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -584,7 +612,7 @@
                     <code>
                     <a name="/c:objc(cs)EkoChannelRepository(im)setDisplayNameForChannel:displayName:completion:"></a>
                     <a name="//apple_ref/objc/Method/-setDisplayNameForChannel:displayName:completion:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)setDisplayNameForChannel:displayName:completion:">-setDisplayNameForChannel:displayName:completion:</a>
+                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)setDisplayNameForChannel:displayName:completion:">-setDisplayNameForChannel:<wbr>displayName:<wbr>completion:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -649,7 +677,7 @@
                     <code>
                     <a name="/c:objc(cs)EkoChannelRepository(im)setTagsForChannel:tags:completion:"></a>
                     <a name="//apple_ref/objc/Method/-setTagsForChannel:tags:completion:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)setTagsForChannel:tags:completion:">-setTagsForChannel:tags:completion:</a>
+                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)setTagsForChannel:tags:completion:">-setTagsForChannel:<wbr>tags:<wbr>completion:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -714,13 +742,18 @@
                     <code>
                     <a name="/c:objc(cs)EkoChannelRepository(im)channelsForFilter:includingTags:excludingTags:"></a>
                     <a name="//apple_ref/objc/Method/-channelsForFilter:includingTags:excludingTags:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)channelsForFilter:includingTags:excludingTags:">-channelsForFilter:includingTags:excludingTags:</a>
+                    <a class="token discouraged" href="#/c:objc(cs)EkoChannelRepository(im)channelsForFilter:includingTags:excludingTags:">-channelsForFilter:<wbr>includingTags:<wbr>excludingTags:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Deprecated start from 3.0, this no longer be supported in the long term, please use channel collection with builder instead.</p>
+
+                      </div>
                       <div class="abstract">
                         <p>@abstract Returns a collection of all channels, filtered by the specific filter and tags</p>
 <div class="aside aside-note">
@@ -801,7 +834,7 @@
                     <code>
                     <a name="/c:objc(cs)EkoChannelRepository(im)createChannel:displayName:type:metadata:tags:users:"></a>
                     <a name="//apple_ref/objc/Method/-createChannel:displayName:type:metadata:tags:users:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)createChannel:displayName:type:metadata:tags:users:">-createChannel:displayName:type:metadata:tags:users:</a>
+                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)createChannel:displayName:type:metadata:tags:users:">-createChannel:<wbr>displayName:<wbr>type:<wbr>metadata:<wbr>tags:<wbr>users:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -819,7 +852,7 @@
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoChannel.html">EkoChannel</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span>
     <span class="nf">createChannel</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">channelId</span>
       <span class="nf">displayName</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">displayName</span>
-             <span class="nf">type</span><span class="p">:(</span><span class="n"><a href="../Enums.html#/c:@E@EkoChannelType">EkoChannelType</a></span><span class="p">)</span><span class="nv">type</span>
+             <span class="nf">type</span><span class="p">:(</span><span class="n"><a href="../Enums.html#/c:@E@EkoChannelCreateType">EkoChannelCreateType</a></span><span class="p">)</span><span class="nv">type</span>
          <span class="nf">metadata</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*</span><span class="p">,</span> <span class="n">id</span><span class="o">&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">metadata</span>
              <span class="nf">tags</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">tags</span>
             <span class="nf">users</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">userIds</span><span class="p">;</span></code></pre>
@@ -827,7 +860,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createChannel</span><span class="p">(</span><span class="n">_</span> <span class="nv">channelId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">displayName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums.html#/c:@E@EkoChannelType">EkoChannelType</a></span><span class="p">,</span> <span class="nv">metadata</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span> <span class="n">users</span> <span class="nv">userIds</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoChannel.html">EkoChannel</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createChannel</span><span class="p">(</span><span class="n">_</span> <span class="nv">channelId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">displayName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums.html#/c:@E@EkoChannelCreateType">EkoChannelCreateType</a></span><span class="p">,</span> <span class="nv">metadata</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span> <span class="n">users</span> <span class="nv">userIds</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoChannel.html">EkoChannel</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -916,9 +949,141 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)EkoChannelRepository(im)createConversation:displayName:metadata:tags:"></a>
+                    <a name="//apple_ref/objc/Method/-createConversation:displayName:metadata:tags:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)createConversation:displayName:metadata:tags:">-createConversation:<wbr>displayName:<wbr>metadata:<wbr>tags:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a conversation channel</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoChannel.html">EkoChannel</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">createConversation</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">userId</span>
+           <span class="nf">displayName</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">displayName</span>
+              <span class="nf">metadata</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*</span><span class="p">,</span> <span class="n">id</span><span class="o">&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">metadata</span>
+                  <span class="nf">tags</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">tags</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createConversation</span><span class="p">(</span><span class="n">_</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">displayName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">metadata</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoObject.html">EkoObject</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoChannel.html">EkoChannel</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An user Identifier that we want to chat with</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>displayName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Channel display name (this can be changed later)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>metadata</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Your custom metadata to associate with the channel</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Your custom tags to associate with the channel</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoChannelRepository(im)channelCollection"></a>
+                    <a name="//apple_ref/objc/Method/-channelCollection" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)channelCollection">-channelCollection</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a new channel query builder in order to get specific channel types</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Hence client must specify the channel types with declarative ways in order get the correct  designated builder
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">EkoChannelQueryBuilder</span> <span class="o">*</span><span class="p">)</span><span class="n">channelCollection</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">channelCollection</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">EkoChannelQueryBuilder</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>ChannelQueryBuilder instance</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)EkoChannelRepository(im)notificationManagerForChannelId:"></a>
                     <a name="//apple_ref/objc/Method/-notificationManagerForChannelId:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)notificationManagerForChannelId:">-notificationManagerForChannelId:</a>
+                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)notificationManagerForChannelId:">-notificationManagerForChannelId:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -942,6 +1107,98 @@
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">notificationManager</span><span class="p">(</span><span class="n">forChannelId</span> <span class="nv">channelId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoChannelNotificationsManager.html">EkoChannelNotificationsManager</a></span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoChannelRepository(im)searchChannel:"></a>
+                    <a name="//apple_ref/objc/Method/-searchChannel:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)searchChannel:">-searchChannel:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Search channels by the display name</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoCollection.html">EkoCollection</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoChannel.html">EkoChannel</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nf">searchChannel</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">displayName</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">searchChannel</span><span class="p">(</span><span class="n">_</span> <span class="nv">displayName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoCollection.html">EkoCollection</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoChannel.html">EkoChannel</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>displayName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The expected channel display name</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Collection of EkoChannel Live object</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EkoChannelRepository(im)suggestedChannelCollection"></a>
+                    <a name="//apple_ref/objc/Method/-suggestedChannelCollection" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EkoChannelRepository(im)suggestedChannelCollection">-suggestedChannelCollection</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get channels by the recommendation that we calculate</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EkoCollection.html">EkoCollection</a></span><span class="o">&lt;</span><span class="n"><a href="../Classes/EkoChannel.html">EkoChannel</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="n">suggestedChannelCollection</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">suggestedChannelCollection</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EkoCollection.html">EkoCollection</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EkoChannel.html">EkoChannel</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Collection of EkoChannel Live object base on recommendation</p>
                       </div>
                     </section>
                   </div>
@@ -982,8 +1239,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-11-21)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-06-02)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
