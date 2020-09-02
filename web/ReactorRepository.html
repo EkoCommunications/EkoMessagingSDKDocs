@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>PrivilegeListModel - Documentation</title>
+    <title>ReactorRepository - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -34,7 +34,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">PrivilegeListModel</h1>
+    <h1 class="page-title">ReactorRepository</h1>
     
 
     
@@ -47,7 +47,7 @@
 <header>
     
         <h2>
-        PrivilegeListModel
+        ReactorRepository
         </h2>
         
     
@@ -58,6 +58,114 @@
         <div class="container-overview">
         
             
+
+    
+
+    <h4 class="name" id="ReactorRepository"><span class="type-signature"></span>new ReactorRepository<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="addReaction"><span class="type-signature"></span>addReaction<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;boolean>}</span></h4>
+
+    
+
+
+
 
 <dl class="details">
 
@@ -112,8 +220,6 @@
         
 
         
-        <th>Default</th>
-        
 
         <th class="last">Description</th>
     </tr>
@@ -124,7 +230,7 @@
 
         <tr>
             
-                <td class="name"><code>channelId</code></td>
+                <td class="name"><code>reactionName</code></td>
             
 
             <td class="type">
@@ -139,25 +245,154 @@
             
 
             
-                <td class="default">
-                
-                </td>
-            
 
             <td class="description last"></td>
         </tr>
 
     
+    </tbody>
+</table>
+
+
+
+
+
+
+<div class="description usertext">
+    Add a reaction to a given message
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Returns true if success, false otherwise
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;boolean></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="removeReaction"><span class="type-signature"></span>removeReaction<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;boolean>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
 
         <tr>
             
-                <td class="name"><code>privileges</code></td>
+                <td class="name"><code>reactionName</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Array.&lt;string></span>
+<span class="param-type">string</span>
 
 
             
@@ -165,12 +400,6 @@
 
             
 
-            
-                <td class="default">
-                
-                    <code>empty</code>
-                
-                </td>
             
 
             <td class="description last"></td>
@@ -184,27 +413,61 @@
 
 
 
-            
 
-            
+<div class="description usertext">
+    Add a reaction to a given message
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
         
-        </div>
-    
+<div class="param-desc">
+    Returns true if success, false otherwise
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;boolean></span>
+
+
+    </dd>
+</dl>
 
     
 
-    
 
-    
-    
-    
 
-     
-
-    
-
-    
-
+        
     
 
     
